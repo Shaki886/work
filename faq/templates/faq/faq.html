@@ -94,23 +94,23 @@
                          
 
                          
-
+							{% for faq in faqs %}
                           <div class="panel panel-default">
                             <div class="panel-heading">
                               <h3 class="panel-title">
                                 <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree1">
-                                 1. Lorem ipsum dolor sit amet
-                                  
+                                 {{ faq.title }}
+  
                                 </a>
                               </h3>
                             </div>
                             <div id="collapseThree1" class="panel-collapse collapse" style="height: 0px;">
                               <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
+                                {{ faq.text|linebreaks }}
                               </div>
                             </div>
                           </div>
-
+                             {% endfor %}   
 						  
 						   <div class="panel panel-default">
                             <div class="panel-heading">
