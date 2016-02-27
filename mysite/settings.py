@@ -39,7 +39,27 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'index',
     'blog',
-    'kontakt',
+    'cennik',
+    'dane_kontaktowe',
+    'danedo_faktury',
+    'dodaj_ogloszenie',
+    'dodawanieogloszenia',
+    'faq',
+    'kategorie',
+    'logowanie',
+    'mapakategorii',
+    'mapamiejscowosci',
+    'mojekonto_ogloszenia'
+    'mojekonto_ogloszeniav1'
+    'oglosznie_widok',
+    'pojedynczy_wpis',
+    'pomoc',
+    'regulamin',
+    'rejestracja_dealer',
+    'rejestracja_indywidualny',
+    'wiadomosci',
+    'wiadomosciv2',
+    'zmien_haslo',
 )
 
 MIDDLEWARE_CLASSES = (

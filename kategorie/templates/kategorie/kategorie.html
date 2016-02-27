@@ -1,0 +1,858 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Giełda-aut.pl</title>	
+	<!-- core CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">  
+	<link href='https://fonts.googleapis.com/css?family=Exo+2:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="/static/css/prettyPhoto.css" rel="stylesheet">
+    <link href="/static/css/main.css" rel="stylesheet">
+    <link href="/static/css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+	</head>
+<body class="homepage">
+
+    <header id="header">
+    
+
+        <nav class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                </div>
+				
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Strona Główna</a></li>
+                        <li><a href="#">Oferta</a></li>
+                      
+                        <li><a href="portfolio.html">Blog</a></li>                       
+                        <li><a href="blog.html">Regulamin</a></li> 
+                        <li><a href="contact-us.html">Pomoc</a></li>    
+			<li><a href="contact-us.html">Kontakt</a></li>   						
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+		
+    </header><!--/header-->
+
+
+   
+    <section id="services" class="service-item">
+	   <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+					 <div class="col-sm-9">
+						<div class="info-body">
+							<h3>Nieważne jakiego samochodu szukasz, bo...</h3>
+							<h4>u nas go <red>znajdziesz!</red></h4>
+						</div>
+					 </div>
+					 <div class="col-sm-3">
+						<button type="submit" name="submit" class="btn btn-primary-nav btn-lg">Dodaj Ogłoszenie</button>
+					 </div>      
+				</div>                                           
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section><!--/#services-->
+
+
+    
+	
+	<section id="main-section">
+        <div class="container">
+		   <div class="row">
+		   <div class="col-sm-12 margin-bottom-index">
+						<h4>Samochody Osobowe</h4>
+						<h5>Volkswagen - Osobowe</h5>
+						<div class="col-sm-12">
+						<div class="col-sm-3  col-sm-offset-9">
+					<div class="form-group">
+                            <div class="col-sm-5 padding left"><label>Sortuj wg:</label></div>
+							<div class="col-sm-7 padding">
+                           <select class="selectinput_message cs-select" name="" style="margin-top:20px;">
+								<option value="">Najnowsze</option>
+								<option value="">Najstarsze</option>
+								
+							</select>
+							</div>
+                        </div>
+					</div>
+						</div>
+						
+						<div class="col-sm-12">
+							<div class="col-sm-3 padding">
+								<div class="search-title">Kategorie</div>
+										<ul class="search_menu">
+											<li><a href="#">Osobowe</a></li>
+											<li><a href="#">Rolnicze</a></li>
+											<li><a href="#">Ciężarowe</a></li>
+											<li><a href="#">Dostawcze</a></li>
+											<li><a href="#">Motocykle</a></li>
+											<li><a href="#">Budowlane</a></li>
+											<li><a href="#">Przyczepy</a></li>
+										</ul><BR>
+										
+								<div class="search-title">Stan</div>	
+										<ul class="search_menu">
+											<li><a href="#">Nowe</a></li>
+											<li><a href="#">Używane</a></li>
+										</ul><BR>
+
+								
+								<div class="search-title">Rocznik</div>
+						<div class="form-group padding">
+                            <div class="col-sm-2 padding left"><label>Od</label></div>
+							<div class="col-sm-9 padding">
+                           <input class="form-control8" type="text">
+							</div>
+                        </div>
+						<div class="form-group">
+                            <div class="col-sm-2 padding left"><label>Do</label></div>
+							<div class="col-sm-9 padding">
+                           <input class="form-control8" type="text">
+							</div>
+                        </div><BR><BR>
+
+						<div class="search-title">Cena</div>
+						<div class="form-group padding">
+                            <div class="col-sm-2 padding left"><label>Od</label></div>
+							<div class="col-sm-9 padding">
+                           <input class="form-control8" type="text">
+							</div>
+                        </div>
+						<div class="form-group">
+                            <div class="col-sm-2 padding left"><label>Do</label></div>
+							<div class="col-sm-9 padding">
+                           <input class="form-control8" type="text">
+							</div>
+                        </div><BR><BR>
+								
+						<div class="search-title">Lokalizacja</div><BR>
+								 <div class="form-group">
+									<div class="col-sm-11 padding">
+										  <div class="rej">
+						 <select class="selectinput cs-select" name="">
+								<option class="select_pole" value="">Miasto</option>
+								<option class="select_pole" value="">Wrocław</option>
+								
+							</select>
+							</div>	
+									</div>
+								</div>
+							 <div class="form-group">
+								<div class="col-sm-11 padding">
+								   <div class="rej">
+							<select class="selectinput cs-select" name="">
+								<option class="select_pole" value="">Województwo</option>
+								<option class="select_pole" value="">Śląskie</option>
+								
+							</select>
+					
+						
+				
+				</div>	
+								</div>
+							</div>	<BR><BR>
+
+							<div class="search-title">Przebieg</div>
+							<div class="form-group padding">
+                            <div class="col-sm-2 padding left"><label>Od</label></div>
+							<div class="col-sm-9 padding">
+                           <input class="form-control8" type="text">
+							</div>
+                        </div>
+						<div class="form-group">
+                            <div class="col-sm-2 padding left"><label>Do</label></div>
+							<div class="col-sm-9 padding">
+                           <input class="form-control8" type="text">
+							</div>
+                        </div><BR><BR><BR>
+						
+						
+								<div class="search-title">Rodzaj paliwa</div>
+								
+								<ul class="search_menu">
+											<li><a href="#">Diesel</a></li>
+											<li><a href="#">Benzyna</a></li>
+											<li><a href="#">Benzyna +LPG</a></li>
+											<li><a href="#">Hybryda</a></li>
+											<li><a href="#">Benzyna + CNG</a></li>
+											<li><a href="#">Inne</a></li>
+											
+										</ul><BR>
+										
+								<div class="search-title">Uszkodzony</div>
+								
+								<ul class="search_menu">
+											<li><a href="#">Tak</a></li>
+											<li><a href="#">Nie</a></li>
+										
+										</ul><BR>
+								<div class="search-title">Stan</div>
+								
+								<ul class="search_menu">
+											<li><a href="#">Nowy</a></li>
+											<li><a href="#">Używany</a></li>
+										
+										</ul><BR>	
+								<div class="search-title">Kolor</div>
+								<ul class="search_menu">
+											<li><a href="#">Biały</a></li>
+											<li><a href="#">Czarny</a></li>
+											<li><a href="#">Zielony</a></li>
+											<li><a href="#">Niebieski</a></li>
+											<li><a href="#">Czerwony</a></li>
+											<li><a href="#">Grafitowy</a></li>
+											<li><a href="#">Inne</a></li>
+											
+										</ul><BR>
+								
+						</div>
+						<div class="col-sm-9 border-left-red padding">
+						 <div class="informa"  style="margin-left:15px;">Ogłoszenia wyróżnione</div>
+						
+						<div class="col-sm-12 padding ogloszenie" style="margin-left:15px;">
+							<div class="col-sm-4 padding"><div style="position:absolute; margin-top:-5px; margin-left:-5px;"><img src="images/wyroznienie.png"/></div>
+							<img src="images/zdjecie.jpg" class="img-responsive" />
+							</div>
+							<div class="col-sm-8 ">
+								<div class="col-sm-12 padding">
+									<h2 class="tytul_ogloszenie">Nowy ope astara 123 highliner LR-A</h2>
+								</div>
+								<div class="col-sm-12 padding" style="margin-top:-15px;">
+									<price>25 547</price><valuta>PLN</valuta>
+								</div>
+								<div class="col-sm-10 padding"><BR><BR>
+										<div class="col-sm-4 padding"><opis>Rok produkcji</opis> <info>2015</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Przebieg</opis> <info>150km</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Stan</opis> <info>Używany</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Rodzaj paliwa</opis> <info>Benzyna</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Pojemność</opis> <info>4.7l</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Kolor</opis> <info>Srebrny</info>
+										</div>
+								
+								</div>
+								<div class="col-sm-2 padding"><BR>
+										<city>Wrocław(Śląskie)</city><BR>
+										<button type="submit" name="submit" class="btn btn-primary1 btn-lg" required="required">Więcej</button><BR><BR>
+								</div>
+							</div>
+					  </div>
+					  <div class="col-sm-12 padding ogloszenie" style="margin-left:15px;">
+							<div class="col-sm-4 padding"><div style="position:absolute; margin-top:-5px; margin-left:-5px;"><img src="images/wyroznienie.png"/></div>
+							<img src="images/zdjecie.jpg" class="img-responsive" /><BR><BR>
+							</div>
+							<div class="col-sm-8 ">
+								<div class="col-sm-12 padding">
+									<h2 class="tytul_ogloszenie">Nowy ope astara 123 highliner LR-A</h2>
+								</div>
+								<div class="col-sm-12 padding" style="margin-top:-15px;">
+									<price>25 547</price><valuta>PLN</valuta>
+								</div>
+								<div class="col-sm-10 padding"><BR><BR>
+										<div class="col-sm-4 padding"><opis>Rok produkcji</opis> <info>2015</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Przebieg</opis> <info>150km</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Stan</opis> <info>Używany</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Rodzaj paliwa</opis> <info>Benzyna</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Pojemność</opis> <info>4.7l</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Kolor</opis> <info>Srebrny</info>
+										</div>
+								
+								</div>
+								<div class="col-sm-2 padding"><BR>
+										<city>Wrocław(Śląskie)</city><BR>
+										<button type="submit" name="submit" class="btn btn-primary1 btn-lg" required="required">Więcej</button><BR><BR>
+								</div>
+							</div>
+					  </div>
+					 
+						
+						
+						<div class="col-sm-12 padding" style="margin-left:15px;"><BR>
+						 <div class="inform">Ogłoszenia pozostałe</div><BR>
+						</div>
+							
+							   <div class="col-sm-12 padding ogloszenie" style="margin-left:15px;">
+							<div class="col-sm-4 padding">
+							<img src="images/zdjecie.jpg" class="img-responsive" /><BR><BR>
+							</div>
+							<div class="col-sm-8 ">
+								<div class="col-sm-12 padding">
+									<h2 class="tytul_ogloszenie">Nowy ope astara 123 highliner LR-A</h2>
+								</div>
+								<div class="col-sm-12 padding" style="margin-top:-15px;">
+									<price>25 547</price><valuta>PLN</valuta>
+								</div>
+								<div class="col-sm-10 padding"><BR><BR>
+										<div class="col-sm-4 padding"><opis>Rok produkcji</opis> <info>2015</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Przebieg</opis> <info>150km</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Stan</opis> <info>Używany</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Rodzaj paliwa</opis> <info>Benzyna</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Pojemność</opis> <info>4.7l</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Kolor</opis> <info>Srebrny</info>
+										</div>
+								
+								</div>
+								<div class="col-sm-2 padding"><BR>
+										<city>Wrocław(Śląskie)</city><BR>
+										<button type="submit" name="submit" class="btn btn-primary1 btn-lg" required="required">Więcej</button><BR><BR>
+								</div>
+							</div>
+					  </div>
+    <div class="col-sm-12 padding ogloszenie" style="margin-left:15px;">
+							<div class="col-sm-4 padding">
+							<img src="images/zdjecie.jpg" class="img-responsive" /><BR><BR>
+							</div>
+							<div class="col-sm-8 ">
+								<div class="col-sm-12 padding">
+									<h2 class="tytul_ogloszenie">Nowy ope astara 123 highliner LR-A</h2>
+								</div>
+								<div class="col-sm-12 padding" style="margin-top:-15px;">
+									<price>25 547</price><valuta>PLN</valuta>
+								</div>
+								<div class="col-sm-10 padding"><BR><BR>
+										<div class="col-sm-4 padding"><opis>Rok produkcji</opis> <info>2015</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Przebieg</opis> <info>150km</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Stan</opis> <info>Używany</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Rodzaj paliwa</opis> <info>Benzyna</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Pojemność</opis> <info>4.7l</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Kolor</opis> <info>Srebrny</info>
+										</div>
+								
+								</div>
+								<div class="col-sm-2 padding"><BR>
+										<city>Wrocław(Śląskie)</city><BR>
+										<button type="submit" name="submit" class="btn btn-primary1 btn-lg" required="required">Więcej</button><BR><BR>
+								</div>
+							</div>
+					  </div>
+					     <div class="col-sm-12 padding ogloszenie" style="margin-left:15px;">
+							<div class="col-sm-4 padding">
+							<img src="images/zdjecie.jpg" class="img-responsive" /><BR><BR>
+							</div>
+							<div class="col-sm-8 ">
+								<div class="col-sm-12 padding">
+									<h2 class="tytul_ogloszenie">Nowy ope astara 123 highliner LR-A</h2>
+								</div>
+								<div class="col-sm-12 padding" style="margin-top:-15px;">
+									<price>25 547</price><valuta>PLN</valuta>
+								</div>
+								<div class="col-sm-10 padding"><BR><BR>
+										<div class="col-sm-4 padding"><opis>Rok produkcji</opis> <info>2015</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Przebieg</opis> <info>150km</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Stan</opis> <info>Używany</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Rodzaj paliwa</opis> <info>Benzyna</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Pojemność</opis> <info>4.7l</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Kolor</opis> <info>Srebrny</info>
+										</div>
+								
+								</div>
+								<div class="col-sm-2 padding"><BR>
+										<city>Wrocław(Śląskie)</city><BR>
+										<button type="submit" name="submit" class="btn btn-primary1 btn-lg" required="required">Więcej</button><BR><BR>
+								</div>
+							</div>
+					  </div>
+					     <div class="col-sm-12 padding ogloszenie" style="margin-left:15px;">
+							<div class="col-sm-4 padding">
+							<img src="images/zdjecie.jpg" class="img-responsive" /><BR><BR>
+							</div>
+							<div class="col-sm-8 ">
+								<div class="col-sm-12 padding">
+									<h2 class="tytul_ogloszenie">Nowy ope astara 123 highliner LR-A</h2>
+								</div>
+								<div class="col-sm-12 padding" style="margin-top:-15px;">
+									<price>25 547</price><valuta>PLN</valuta>
+								</div>
+								<div class="col-sm-10 padding"><BR><BR>
+										<div class="col-sm-4 padding"><opis>Rok produkcji</opis> <info>2015</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Przebieg</opis> <info>150km</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Stan</opis> <info>Używany</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Rodzaj paliwa</opis> <info>Benzyna</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Pojemność</opis> <info>4.7l</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Kolor</opis> <info>Srebrny</info>
+										</div>
+								
+								</div>
+								<div class="col-sm-2 padding"><BR>
+										<city>Wrocław(Śląskie)</city><BR>
+										<button type="submit" name="submit" class="btn btn-primary1 btn-lg" required="required">Więcej</button><BR><BR>
+								</div>
+							</div>
+					  </div>
+					     <div class="col-sm-12 padding ogloszenie" style="margin-left:15px;">
+							<div class="col-sm-4 padding">
+							<img src="images/zdjecie.jpg" class="img-responsive" /><BR><BR>
+							</div>
+							<div class="col-sm-8 ">
+								<div class="col-sm-12 padding">
+									<h2 class="tytul_ogloszenie">Nowy ope astara 123 highliner LR-A</h2>
+								</div>
+								<div class="col-sm-12 padding" style="margin-top:-15px;">
+									<price>25 547</price><valuta>PLN</valuta>
+								</div>
+								<div class="col-sm-10 padding"><BR><BR>
+										<div class="col-sm-4 padding"><opis>Rok produkcji</opis> <info>2015</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Przebieg</opis> <info>150km</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Stan</opis> <info>Używany</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Rodzaj paliwa</opis> <info>Benzyna</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Pojemność</opis> <info>4.7l</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Kolor</opis> <info>Srebrny</info>
+										</div>
+								
+								</div>
+								<div class="col-sm-2 padding"><BR>
+										<city>Wrocław(Śląskie)</city><BR>
+										<button type="submit" name="submit" class="btn btn-primary1 btn-lg" required="required">Więcej</button><BR><BR>
+								</div>
+							</div>
+					  </div>
+					     <div class="col-sm-12 padding ogloszenie" style="margin-left:15px;">
+							<div class="col-sm-4 padding">
+							<img src="images/zdjecie.jpg" class="img-responsive" /><BR><BR>
+							</div>
+							<div class="col-sm-8 ">
+								<div class="col-sm-12 padding">
+									<h2 class="tytul_ogloszenie">Nowy ope astara 123 highliner LR-A</h2>
+								</div>
+								<div class="col-sm-12 padding" style="margin-top:-15px;">
+									<price>25 547</price><valuta>PLN</valuta>
+								</div>
+								<div class="col-sm-10 padding"><BR><BR>
+										<div class="col-sm-4 padding"><opis>Rok produkcji</opis> <info>2015</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Przebieg</opis> <info>150km</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Stan</opis> <info>Używany</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Rodzaj paliwa</opis> <info>Benzyna</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Pojemność</opis> <info>4.7l</info>
+										</div>
+										<div class="col-sm-4 padding"><opis>Kolor</opis> <info>Srebrny</info>
+										</div>
+								
+								</div>
+								<div class="col-sm-2 padding"><BR>
+										<city>Wrocław(Śląskie)</city><BR>
+										<button type="submit" name="submit" class="btn btn-primary1 btn-lg" required="required">Więcej</button><BR><BR>
+								</div>
+							</div>
+					  </div>
+   
+						<div class="col-sm-11  col-sm-offset-1 padding">
+							<div class="col-sm-6 padding margin-top">
+								<h5 style="float:left;">10 | 25 | 50 | 100</h5> <p class="filtry">ofert na stronie</p>
+							</div>	
+							<div class="col-sm-6 padding">
+									<ul class="pagination pagination-lg">
+                        <li><a href="#"><i class="fa fa-long-arrow-left"></i></a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#"><i class="fa fa-long-arrow-right"></i></a></li>
+                    </ul>
+							</div>	
+					</div>					  
+							
+						</div>
+							
+							
+							
+						</div>
+						
+						
+					
+					</div>					
+						
+				</div>		
+			</div>
+        </div><!--/.container-->
+    </section>
+   
+
+    <section id="conatcat-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 center">
+                   
+                      
+                        <div class="media-body">
+								<div class="center">
+                            <h2>Pytania? Zadzwoń do nas już teraz <number>+48 555 888 777</number> lub wyslij <BR>e-mail na adres <number>info@gielda-aut.pl</number></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation +0123 456 70 80</p>
+							<div class="col-md-12 col-sm-6 margin">
+									<button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Kontakt</button>
+								</div>
+								</div>
+                        </div>
+                    
+                </div>
+            </div>
+        </div><!--/.container-->    
+    </section><!--/#conatcat-info-->
+
+  
+ 
+<div class="stopka">
+        <div class="container">
+            <div class="row hidden-xs ">
+                
+                <div class="col-sm-6 border">
+                    <div class="row hidden-sm">
+                        <div class="col-md-4">
+                            <h4 class="naglowek_stopka_menu1">Oferta</h4>
+                            <ul class="footer_menu">
+                                <li><a href="#">Osobowe</a></li>
+								<li><a href="#">Rolnicze</a></li>
+								<li><a href="#">Ciężarowe</a></li>
+								<li><a href="#">Dostawcze</a></li>
+								<li><a href="#">Motocykle</a></li>
+								<li><a href="#">Budowlane</a></li>
+								<li><a href="#">Przyczepy</a></li>
+                            </ul>
+                        </div>
+						 <div class="col-md-4">
+                            <h4 class="naglowek_stopka_menu1">Menu</h4>
+                            <ul class="footer_menu">
+									<li><a href="/">Strona Główna</a></li>
+									<li><a href="/oferta">Oferta</a></li>
+									<li><a href="/onas">O nas</a></li>
+									<li><a href="/blog">Blog</a></li>                       
+									<li><a href="/regulamin">Regulamin</a></li> 
+									<li><a href="/pomoc">Pomoc</a></li>    
+									<li><a href="/kontakt">Kontakt</a></li>   			
+                            </ul>
+                        </div>
+						 <div class="col-md-4">
+                            <h4 class="naglowek_stopka_menu1">Dla klienta</h4>
+                            <ul class="footer_menu">
+                                <li><a href="#">Zaloguj się</a></li>
+                                <li><a href="#">Zarejesruj się</a></li>
+								<li><a href="#">Ustawienia konta</a></li>
+								<li><a href="#">Płatności</a></li>
+								<li><a href="#">Moje ogłoszenia</a></li>
+							
+                            </ul>
+                        </div>
+						</div>
+						<div class="row visible-sm">
+						 <div class="accordion">
+                       
+                        <div class="panel-group" id="accordion1">
+                          
+
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1">
+                                 Oferta
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                            </div>
+                            <div id="collapseTwo1" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                 <ul class="footer_menu">
+                                <li><a href="#">Osobowe</a></li>
+								<li><a href="#">Rolnicze</a></li>
+								<li><a href="#">Ciężarowe</a></li>
+								<li><a href="#">Dostawcze</a></li>
+								<li><a href="#">Motocykle</a></li>
+								<li><a href="#">Budowlane</a></li>
+								<li><a href="#">Przyczepy</a></li>
+                            </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree1">
+                                  Dla Klienta
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                            </div>
+                            <div id="collapseThree1" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                <ul class="footer_menu">
+                                <li><a href="#">Lorem ipsum</a></li>
+                                <li><a href="#">Lorem ipsum</a></li>
+								<li><a href="#">Lorem ipsum</a></li>
+								<li><a href="#">Lorem ipsum</a></li>
+								<li><a href="#">Lorem ipsum</a></li>
+								<li><a href="#">Lorem ipsum</a></li>
+                            </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseFour1">
+                                  Inne
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                            </div>
+                            <div id="collapseFour1" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                <ul class="footer_menu">
+                                <li><a href="#">Lorem ipsum</a></li>
+                                <li><a href="#">Lorem ipsum</a></li>
+								<li><a href="#">Lorem ipsum</a></li>
+								<li><a href="#">Lorem ipsum</a></li>
+								<li><a href="#">Lorem ipsum</a></li>
+								<li><a href="#">Lorem ipsum</a></li>
+                            </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div><!--/#accordion1-->
+                    </div>
+						
+						</div>
+						
+						<div class="col-md-12 netbook">
+						<div class="row margin">
+						<img src="static/images/logo.png" alt="giełda aut"/>
+						<div class="media-body">
+						Copyright 2015 for Giełda aut.<BR>
+						<a href="#" alt="pliki COOKIES">Strona wykorzystuje pliki cookie</a>
+						</div>
+					</div>
+						
+                    </div>
+					
+                </div>
+				<div class="col-sm-6">
+                     <h4 class="naglowek_stopka_menu">Dlaczego my?</h4>
+
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+
+</p><BR><BR>
+
+                   <div class="col-sm-12" style="padding-left:0px;">
+					<div class="col-sm-4 hidden-sm" style="padding-left:0px;">
+					<h4 class="naglowek_stopka_menu1">Bądź na bieżąco</h4>
+					</div>
+					<div class="col-sm-12 visible-sm">
+					 <form method="post" action="">
+					
+							
+						<div class="col-sm-8" style="padding-left:0px;">
+						<input type="text" placeholder="Twój email" class="form-control">
+						</div>
+						<div class="col-sm-3" style="padding-left:0px; float:right;">
+						<button type="submit" name="submit" onclick="location.href='/kontakt';" class="btn btn-primary btn-lg" required="required">Kontakt</button>
+						</div>
+					<BR><BR><BR>
+					</form>
+					</div>
+				   <div class="col-sm-8 hidden-sm">
+				   
+					 <form method="post" action="">
+					
+							
+						<div class="col-sm-8" style="padding-left:0px;">
+						<input type="text" placeholder="Twój email" class="form-control">
+						</div>
+						<div class="col-sm-3" style="padding-left:0px; float:right;">
+						<button type="submit" name="submit"  class="btn btn-primary btn-lg" required="required">Kontakt</button>
+						</div>
+					<BR><BR><BR>
+					</form>
+					</div>
+				   </div>
+				  
+                </div>
+			
+				
+					
+            </div>
+			<div class="col-md-12 center visible-xs">
+						<div class="col-sm-12">
+							<h4 class="naglowek_stopka_menu">Dlaczego my?</h4>
+
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+
+</p><BR><BR>
+
+                  
+				  
+                </div>
+				   <div class="col-sm-6 wow fadeInDown">
+                    <div class="accordion">
+                       
+                        <div class="panel-group" id="accordion1">
+                          
+
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1">
+                                 Oferta
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                            </div>
+                            <div id="collapseTwo1" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                 <ul class="footer_menu">
+                                <li><a href="#">Osobowe</a></li>
+								<li><a href="#">Rolnicze</a></li>
+								<li><a href="#">Ciężarowe</a></li>
+								<li><a href="#">Dostawcze</a></li>
+								<li><a href="#">Motocykle</a></li>
+								<li><a href="#">Budowlane</a></li>
+								<li><a href="#">Przyczepy</a></li>
+                            </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree1">
+                                  Dla Klienta
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                            </div>
+                            <div id="collapseThree1" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                <ul class="footer_menu">
+                                <li><a href="#">Lorem ipsum</a></li>
+                                <li><a href="#">Lorem ipsum</a></li>
+								<li><a href="#">Lorem ipsum</a></li>
+								<li><a href="#">Lorem ipsum</a></li>
+								<li><a href="#">Lorem ipsum</a></li>
+								<li><a href="#">Lorem ipsum</a></li>
+                            </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseFour1">
+                                  Inne
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                            </div>
+                            <div id="collapseFour1" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                <ul class="footer_menu">
+                                <li><a href="#">Lorem ipsum</a></li>
+                                <li><a href="#">Lorem ipsum</a></li>
+								<li><a href="#">Lorem ipsum</a></li>
+								<li><a href="#">Lorem ipsum</a></li>
+								<li><a href="#">Lorem ipsum</a></li>
+								<li><a href="#">Lorem ipsum</a></li>
+                            </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div><!--/#accordion1-->
+                    </div>
+                </div>
+				
+
+						<div class="row margin visible-xs-block visible-sm-block">
+						<img src="statc/images/logo.png" alt="giełda aut"/>
+						<div class="media-body">
+						Copyright 2015 for Giełda aut.<BR>
+						<a href="#" alt="pliki COOKIES">Strona wykorzystuje pliki cookie</a>
+						</div>
+					</div>
+						
+                    </div>
+        </div>
+    </div>
+    <script src="static/js/jquery.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/jquery.prettyPhoto.js"></script>
+    <script src="static/js/jquery.isotope.min.js"></script>
+    <script src="static/js/main.js"></script>
+    <script src="static/js/wow.min.js"></script>
+	<script type="text/javascript">
+    function changeState(el) {
+        if (el.readOnly) el.checked=el.readOnly=false;
+        else if (!el.checked) el.readOnly=el.indeterminate=true;
+    }
+	</script>
+	<script type="text/javascript">
+	  WebFontConfig = {
+		google: { families: [ 'Exo+2:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic:latin,latin-ext' ] }
+	  };
+	  (function() {
+		var wf = document.createElement('script');
+		wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+		wf.type = 'text/javascript';
+		wf.async = 'true';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(wf, s);
+	  })(); 
+  </script>
+</body>
+</html>
