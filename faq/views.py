@@ -4,6 +4,6 @@ from .models import FAQ
 
 def faq(request):
 
-    faqs= FAQ.objects.order_by()
+    faq= FAQ.objects.order_by()
 
-    return render(request, 'faq/faq.html', {'faqs': faqs})
+    return render(request, 'faq/faq.html', {'faq': faq})
