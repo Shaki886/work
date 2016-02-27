@@ -55,6 +55,7 @@ INSTALLED_APPS = (
     'ogloszenie_widok',
     'pojedynczy_wpis',
     'pomoc',
+    'ustawienia',
     'regulamin',
     'rejestracja_dealer',
     'rejestracja_indywidualny',
