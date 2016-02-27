@@ -1,4 +1,9 @@
 from django.shortcuts import render
 
+	from .models import FAQ
+
 def faq(request):
-    return render(request, 'faq/faq.html', {})
+
+    faq= FAQ.objects.order_by()
+
+    return render(request, 'faq/faq.html', {'faq': faq})
