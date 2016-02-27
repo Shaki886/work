@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-	from .models import FAQ
+from .models import FAQ
 
 def faq(request):
 
