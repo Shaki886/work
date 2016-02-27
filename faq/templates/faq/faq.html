@@ -94,7 +94,7 @@
                          
 
                          
-					
+						{% for post in posts %}
                           <div class="panel panel-default">
                             <div class="panel-heading">
                               <h3 class="panel-title">
@@ -109,13 +109,16 @@
                               </div>
                             </div>
                           </div>
-                   
+						{% endfor %}
 						  
 						   <div class="panel panel-default">
                             <div class="panel-heading">
                               <h3 class="panel-title">
                                 <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree2">
-                                 2. Lorem ipsum dolor sit amet {{ faq }}
+                                 2. Lorem ipsum dolor sit amet 
+								 {% for post in posts %}
+								 {{ faq }}
+								 {% endfor %}
                                   
                                 </a>
                               </h3>
