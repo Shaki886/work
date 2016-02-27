@@ -49,9 +49,9 @@ INSTALLED_APPS = (
     'logowanie',
     'mapakategorii',
     'mapamiejscowosci',
-    'mojekonto_ogloszenia'
-    'mojekonto_ogloszeniav1'
-    'oglosznie_widok',
+    'mojekonto_ogloszenia',
+    'mojekonto_ogloszeniav1',
+    'ogloszenie_widok',
     'pojedynczy_wpis',
     'pomoc',
     'regulamin',
