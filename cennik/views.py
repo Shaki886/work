@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def cennik(request):
+    return render(request, 'cennik/cennik.html', {})
