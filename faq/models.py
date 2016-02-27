@@ -7,5 +7,6 @@ class FAQ(models.Model):
 	tresc = models.TextField()
 	
 	
+	
 	def __str__(self):
 		return self.tytul
