@@ -29,6 +29,7 @@ urlpatterns = [
     url(r'^regulamin/', include('regulamin.urls')),
     url(r'^rejestracja_dealer/', include('rejestracja_dealer.urls')),
     url(r'^rejestracja_indywidualny/', include('rejestracja_indywidualny.urls')),
+    url(r'^rejestracja_indywidualna/', include('rejestracja_indywidualny.urls')),
     url(r'^ustawienia/', include('ustawienia.urls')),
     url(r'^wiadomosci/', include('wiadomosci.urls')),
     url(r'^wiadomosciv2/', include('wiadomosciv2.urls')),
