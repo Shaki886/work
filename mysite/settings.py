@@ -46,6 +46,7 @@ INSTALLED_APPS = (
     'dodawanieogloszenia',
     'faq',
     'kategorie',
+    'kontakt',
     'logowanie',
     'mapakategorii',
     'mapamiejscowosci',
