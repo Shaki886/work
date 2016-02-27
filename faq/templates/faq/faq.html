@@ -94,18 +94,18 @@
                          
 
                          
-						{% for faq in faqs %}
+						{% for faq in faqss %}
                           <div class="panel panel-default">
                             <div class="panel-heading">
                               <h3 class="panel-title">
                                 <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree1">
-                                 {{ faq.title }} 
+                                 1.{{ faq.title }} 
                                 </a>
                               </h3>
                             </div>
                             <div id="collapseThree1" class="panel-collapse collapse" style="height: 0px;">
                               <div class="panel-body">
-                                {{ faq.text|linebreaks }}
+                                 Tekst:{{ faq.text|linebreaks }}
                               </div>
                             </div>
                           </div>
