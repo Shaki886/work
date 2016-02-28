@@ -98,12 +98,12 @@
                           <div class="panel panel-default">
                             <div class="panel-heading">
                               <h3 class="panel-title">
-                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree{{ faq.faq_id }}">
-                                 {{ faq.tytul }} 
+                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree{{ faq.numer_pytania }}">
+                                 {{ faq.numer_pytania}} {{ faq.tytul }} 
                                 </a>
                               </h3>
                             </div>
-                            <div id="collapseThree1" class="panel-collapse collapse" style="height: 0px;">
+                            <div id="collapseThree{{ faq.numer_pytania }}" class="panel-collapse collapse" style="height: 0px;">
                               <div class="panel-body">
                                  {{ faq.tresc|linebreaks }}
                               </div>
