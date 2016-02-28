@@ -1,8 +1,8 @@
 from django.shortcuts import render
-from .models import BLOG
+from .models import Blog
 
 def Blog(request):
 
-    blog = BLOG.objects.order_by()
+    blog = Blog.objects.order_by()
 
     return render(request, 'blog/blog.html', {'blogs': blogs})
