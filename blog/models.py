@@ -17,7 +17,7 @@ class Post(models.Model):
 	Marka = models.TextField(50)
 	Model = models.TextField(50)
 	Rok = models.IntegerField(4)
-	Stan = Nowy || Uzywany
+	Stan = models.TextField(default='uzywany')
 	Przebieg = models.IntegerField(50)
 	zdjecie = models.FileField()
 	Opis = models.TextField(500)
