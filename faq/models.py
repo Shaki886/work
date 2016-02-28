@@ -2,7 +2,6 @@
 from django.db import models
 
 class FAQ(models.Model):
-	numer_pytania = models.IntegerField()
 	autor = models.ForeignKey('auth.User')
 	tytul = models.CharField(max_length=200)
 	tresc = models.TextField()
