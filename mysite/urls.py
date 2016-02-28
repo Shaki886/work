@@ -15,7 +15,6 @@ urlpatterns = [
     url(r'^danedo_faktury/', include('danedo_faktury.urls')),
     url(r'^dodaj_ogloszenie/', include('dodaj_ogloszenie.urls')),
     url(r'^dodawanieogloszenia/', include('dodawanieogloszenia.urls')),
-    url(r'^faq/', include('faq.urls')),
     url(r'^kategorie/', include('kategorie.urls')),
     url(r'^kontakt/', include('kontakt.urls')),
     url(r'^logowanie/', include('logowanie.urls')),
