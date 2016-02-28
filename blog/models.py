@@ -10,7 +10,7 @@ class Kategorie_aut(models.Model):
 
 	def content_file_name(instance, filename):
 		return '/files/'.join(['content', instance.user.username, filename])
-class Post(models.Model):
+class Blog(models.Model):
 	Login = models.ForeignKey('auth.User')
 	kategoria = models.ForeignKey(Kategorie_aut)
 	Tytul = models.CharField(max_length=200)
