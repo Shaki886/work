@@ -1,3 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Kategorie_artykulu
+from .models import Post
+admin.site.register(Kategorie_artykulu)
+admin.site.register(Post)
