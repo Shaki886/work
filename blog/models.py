@@ -1,16 +1,8 @@
 from django.db import models
 from django.utils import timezone
 
-class Kategorie_aut(models.Model):
-	nazwa_kategorii = models.CharField(max_length=200)
 
-	def __str__(self):
-		return self.nazwa_kategorii
-
-
-	def content_file_name(instance, filename):
-		return '/files/'.join(['content', instance.user.username, filename])
-class Blog(models.Model):
+class BLOG(models.Model):
 	Login = models.ForeignKey('auth.User')
 	kategoria = models.ForeignKey(Kategorie_aut)
 	Tytul = models.CharField(max_length=200)
