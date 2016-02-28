@@ -17,6 +17,7 @@ urlpatterns = [
     url(r'^dodawanieogloszenia/', include('dodawanieogloszenia.urls')),
     url(r'^kategorie/', include('kategorie.urls')),
     url(r'^kontakt/', include('kontakt.urls')),
+    url(r'^faq/', include('faq.urls')),
     url(r'^logowanie/', include('logowanie.urls')),
     url(r'^mapakategorii/', include('mapakategorii.urls')),
     url(r'^mapamiejscowosci/', include('mapamiejscowosci.urls')),
