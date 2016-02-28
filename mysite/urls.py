@@ -7,7 +7,15 @@ admin.autodiscover()
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^user/', include('users.urls')),
+	
+	#user urls
+    url(r'^user/logowanie/$', 'mysite.views.logowanie')),
+    url(r'^user/auth/$', 'mysite.views.auth_view')),	
+    url(r'^user/logout/$', 'mysite.views.logout')),	
+    url(r'^user/loggedin/$', 'mysite.views.index')),	
+    url(r'^user/invalid/$', 'mysite.views.invalid')),	
+	
+	
     url(r'', include('index.urls')),
     url(r'^index/', include('index.urls')),
     url(r'^blog/', include('blog.urls')),
