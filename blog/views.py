@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import .models
+from .models import Postform
 
 def Blog(request):
 
