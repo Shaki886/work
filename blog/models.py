@@ -1,7 +1,7 @@
 from django.db import models
 from django.utils import timezone
 
-class Blog(models.Model):
+class Post(models.Model):
 	Login = models.ForeignKey('auth.User')
 	Tytul = models.CharField(max_length=200)
 	Marka = models.CharField(max_length=50)
