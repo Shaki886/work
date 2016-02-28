@@ -4,7 +4,6 @@ from django.utils import timezone
 
 class BLOG(models.Model):
 	Login = models.ForeignKey('auth.User')
-	kategoria = models.ForeignKey(Kategorie_aut)
 	Tytul = models.CharField(max_length=200)
 	Marka = models.TextField(50)
 	Model = models.TextField(50)
