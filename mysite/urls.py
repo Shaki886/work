@@ -9,11 +9,11 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
 	
 	#user urls
-    url(r'^user/logowanie/$', 'mysite.views.logowanie')),
-    url(r'^user/auth/$', 'mysite.views.auth_view')),	
-    url(r'^user/logout/$', 'mysite.views.logout')),	
-    url(r'^user/loggedin/$', 'mysite.views.index')),	
-    url(r'^user/invalid/$', 'mysite.views.invalid')),	
+    url(r'^user/logowanie/$', '.views.logowanie'),
+    url(r'^user/auth/$', 'mysite.views.auth_view'),	
+    url(r'^user/logout/$', 'mysite.views.logout'),	
+    url(r'^user/loggedin/$', 'mysite.views.index'),	
+    url(r'^user/invalid/$', 'mysite.views.invalid'),	
 	
 	
     url(r'', include('index.urls')),
