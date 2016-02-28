@@ -44,7 +44,7 @@ INSTALLED_APPS = (
     'danedo_faktury',
     'dodaj_ogloszenie',
     'dodawanieogloszenia',
-    'faq',
+    'faqs',
     'kategorie',
     'kontakt',
     'logowanie',
