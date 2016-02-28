@@ -33,4 +33,5 @@ urlpatterns = [
     url(r'^wiadomosci/', include('wiadomosci.urls')),
     url(r'^wiadomosciv2/', include('wiadomosciv2.urls')),
     url(r'^zmien_haslo/', include('zmien_haslo.urls')),
+    url(r'^faq/', include('faq.urls')),
 ]
