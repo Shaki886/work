@@ -4,8 +4,7 @@ from django.template.loader import get_template
 from django.template import RequestContext
 from django.shortcuts import *
 from django.contrib.auth import login,authenticate,logout
-from bookings.models import Apartment,User
-from bookings.forms import *
+from django.contrib.auth.models import User
 
 def logowanie(request):
     if request.method == 'POST':
