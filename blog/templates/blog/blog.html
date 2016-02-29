@@ -103,15 +103,15 @@
 								<div class="col-sm-7 padding">
 										
 										<div class="col-sm-12 padding">
-										<div class="tytul-wpisu-blog">Antyki i ich druga młodość</div>
+										<div class="tytul-wpisu-blog">{{ post.title }}</div>
 										</div>
 										<div class="col-sm-12 height">
-										<p class="text">lorem ipsum dolor sit atmet lorem ipsum dolor sit atmet lorem ipsum dolor sit atmet lorem ipsum dolor sit atmet lorem ipsum dolor sit atmet lorem ipsum dolor sit atmet lorem ipsum<BR><BR> </p>
+										<p class="text">{{ post.text|linebreaks }}<BR><BR> </p>
 										
 										</div>
 										<div class="col-sm-8 mar-top padding">
 										<div class="col-sm-8 background-blog">
-											22 maj 2015
+											Data publikacji: {{ post.published_date }}
 										</div>
 										</div>
 										<div class="col-sm-4 mar-top padding margin-top-blog">
