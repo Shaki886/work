@@ -1,4 +1,8 @@
-from django.shortcuts import render
+from django.views import generic
 
-def pojedynczy_wpis(request):
-    return render(request, 'pojedynczy_wpis/pojedynczy_wpis.html', {})
+
+class Post(generic.ListView):
+    paginate_by = 1
+    context_object_name = 'post'
+
+post = Post.as_view()
