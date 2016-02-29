@@ -89,7 +89,8 @@ TEMPLATES = [
             'context_processors': [
                 'django.contrib.auth.context_processors.auth',
                 'django.core.context_processors.request',
-                'users.context_processors.ip_address_processor'
+                'users.context_processors.ip_address_processor',
+                'django.template.context_processors.media',
             ],
         },
     },
