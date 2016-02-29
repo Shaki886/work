@@ -65,8 +65,7 @@ INSTALLED_APPS = (
     'users',
     'bootstrap3',
 )
-STATIC_ROOT
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
