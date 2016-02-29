@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.utils import timezone
 from .models import Post
 from django.views import generic
-from post import models
+from blog import models
 
 class NewsList(generic.ListView):
     model = models.Post
