@@ -64,6 +64,7 @@ INSTALLED_APPS = (
     'zmien_haslo',
     'users',
     'pagination',
+    'bootstrap3',
 )
 
 MIDDLEWARE_CLASSES = (
