@@ -1,6 +1,6 @@
 # _*_ coding: utf-8 _*_
 from django import forms
-from bookings.models import User
+from django.contrib.auth.models import User
 from django.core.exceptions import ObjectDoesNotExist
 
 class FormularzLogowania(forms.Form):
