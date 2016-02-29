@@ -5,7 +5,7 @@ from users import views
 
 urlpatterns = patterns(
     '',
-    url(r'^create/$', views.FormularzLogowania.as_view(), name='create_user'),
+    url(r'^create/$', views.UserCreateView.as_view(), name='create_user'),
     url(r'^login/$', auth_views.login,
         {'template_name': 'logowanie.html'}, name='login'),
     url(r'^logout/$', auth_views.logout, {'next_page': '/'}, name='logout'),
