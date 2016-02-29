@@ -123,25 +123,20 @@
 								
 						</div>
 						{% endfor %}
-	{% if is_paginated %}					
+			<div class="col-sm-4 col-sm-offset-8 padding" style="float:right;">
+	{% if is_paginated %}	
 {% if page_obj.has_next %}
-    <a href="{% url 'post-list' %}?page={{ page_obj.next_page_number }}">starsze</a>
+    <div class="stronnicowanie"><a href="{% url 'post-list' %}?page={{ page_obj.next_page_number }}"><stron2>nastepna</stron2></a></div>
 {% endif %}
 {% if page_obj.has_previous %}
-    <a href="{% url 'post-list' %}?page={{ page_obj.previous_page_number }}">nowsze</a>
+    <div class="stronnicowanie"><a href="{% url 'post-list' %}?page={{ page_obj.previous_page_number }}"><stron2>poprzednia</stron2></a></div>
 {% endif %}
 	{% endif %}				
 							
-						
-							
-			
-			<div class="col-sm-4 col-sm-offset-8 padding" style="float:right;">
-			<div class="stronnicowanie"> 1  2  3  4  5 <stron>z</stron>  124  <stron2> następna ></stron2>
-			</div>
+
+
                
-            </div>
-           </div>
-           </div>
+          </div>
         </div><!--/.container-->
     </section>
    
