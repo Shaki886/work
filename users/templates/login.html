@@ -87,7 +87,7 @@
 					
 					<form class="form-horizontal" role="form" method="post">
 					{% csrf_token %}
-					{% form.as_p %}
+					{% bootstrap_form form %}
 					<button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Zaloguj się</button>
 
 					</form>
