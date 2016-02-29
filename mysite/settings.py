@@ -65,6 +65,7 @@ INSTALLED_APPS = (
     'users',
     'bootstrap3',
 )
+STATIC_ROOT
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -128,7 +129,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR, "static_cdn")
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR, "media_cdn")
 
 EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
 EMAIL_FILE_PATH = os.path.join(BASE_DIR, 'fake_emails')

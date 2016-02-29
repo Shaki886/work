@@ -41,3 +41,7 @@ urlpatterns = [
     url(r'^wiadomosciv2/', include('wiadomosciv2.urls')),
     url(r'^zmien_haslo/', include('zmien_haslo.urls')),
 ]
+
+if settings.DEBUG:
+	urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_URL)
+	urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_URL)	
