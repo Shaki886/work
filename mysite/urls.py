@@ -30,7 +30,6 @@ urlpatterns = [
     url(r'^mojekonto_ogloszenia/', include('mojekonto_ogloszenia.urls')),
     url(r'^mojekonto_ogloszeniav1/', include('mojekonto_ogloszeniav1.urls')),
     url(r'^oglosznie_widok/', include('oglosznie_widok.urls')),
-    url(r'^pojedynczy_wpis/', include('pojedynczy_wpis.urls')),
     url(r'^pomoc/', include('pomoc.urls')),
     url(r'^regulamin/', include('regulamin.urls')),
     url(r'^rejestracja_dealer/', include('rejestracja_dealer.urls')),
