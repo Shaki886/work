@@ -81,15 +81,13 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
-                'django.template.context_processors.debug',
-                'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
-                'django.core.context_processors.request'
-                'django.contrib.messages.context_processors.messages',
+                'django.core.context_processors.request',
+                'users.context_processors.ip_address_processor'
             ],
         },
     },
