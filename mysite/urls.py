@@ -7,11 +7,6 @@ admin.autodiscover()
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-	
-	#user urls
-
-	
-	
     url(r'', include('index.urls')),
     url(r'^index/', include('index.urls')),
     url(r'^blog/', include('blog.urls')),
@@ -20,9 +15,9 @@ urlpatterns = [
     url(r'^danedo_faktury/', include('danedo_faktury.urls')),
     url(r'^dodaj_ogloszenie/', include('dodaj_ogloszenie.urls')),
     url(r'^dodawanieogloszenia/', include('dodawanieogloszenia.urls')),
+    url(r'^faq/', include('faq.urls')),
     url(r'^kategorie/', include('kategorie.urls')),
     url(r'^kontakt/', include('kontakt.urls')),
-    url(r'^faq/', include('faq.urls')),
     url(r'^logowanie/', include('logowanie.urls')),
     url(r'^mapakategorii/', include('mapakategorii.urls')),
     url(r'^mapamiejscowosci/', include('mapamiejscowosci.urls')),

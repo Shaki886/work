@@ -41,13 +41,13 @@
 				
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-									<li><a href="/">Strona Główna</a></li>
-									<li><a href="/kategorie">Oferta</a></li>
-									<li><a href="/onas">O nas</a></li>
-									<li><a href="/blog">Blog</a></li>                       
-									<li><a href="/regulamin">Regulamin</a></li> 
-									<li><a href="/pomoc">Pomoc</a></li>    
-									<li><a href="/kontakt">Kontakt</a></li>    						
+                        <li class="active"><a href="#">Strona Główna</a></li>
+                        <li><a href="#">Oferta</a></li>
+                      
+                        <li><a href="portfolio.html">Blog</a></li>                       
+                        <li><a href="blog.html">Regulamin</a></li> 
+                        <li><a href="contact-us.html">Pomoc</a></li>    
+			<li><a href="contact-us.html">Kontakt</a></li>   						
                     </ul>
                 </div>
             </div><!--/.container-->
@@ -81,16 +81,9 @@
 				
 		     <div class="col-sm-5 col-sm-offset-1  border">
 					<h2>Zaloguj się</h2>
-
-{% block content %}
-
-	{% if form.errors %}
-	<p class="error">Zły użytkownik lub hasło</p>
-	{% endif %}
 					
 					<form class="form-horizontal" role="form">
   <div class="form-group">
-
     <label for="inputEmail3" class="col-sm-2 control-label" style="margin-top:25px;">Email</label>
     <div class="col-sm-9">
       <input type="email" class="form-control" id="inputEmail3" placeholder="Podaj adres email">
@@ -118,9 +111,6 @@
     </div>
   </div>
 </form>
-
-{% endblock %}
-
            </div>
 		    <div class="col-sm-4 col-sm-offset-1">
 					<h2 style="margin-left:-110px;">Zarejestruj się</h2>
@@ -487,7 +477,7 @@
                             <h4 class="naglowek_stopka_menu1">Menu</h4>
                             <ul class="footer_menu">
 									<li><a href="/">Strona Główna</a></li>
-									<li><a href="/kategorie">Oferta</a></li>
+									<li><a href="/oferta">Oferta</a></li>
 									<li><a href="/onas">O nas</a></li>
 									<li><a href="/blog">Blog</a></li>                       
 									<li><a href="/regulamin">Regulamin</a></li> 
@@ -498,11 +488,11 @@
 						 <div class="col-md-4">
                             <h4 class="naglowek_stopka_menu1">Dla klienta</h4>
                             <ul class="footer_menu">
-                                <li><a href="/logowanie">Zaloguj się</a></li>
-                                <li><a href="/rejestracja_indywidualna">Zarejesruj się</a></li>
-								<li><a href="/ustawienia">Ustawienia konta</a></li>
+                                <li><a href="#">Zaloguj się</a></li>
+                                <li><a href="#">Zarejesruj się</a></li>
+								<li><a href="#">Ustawienia konta</a></li>
 								<li><a href="#">Płatności</a></li>
-								<li><a href="/mojekonto_ogloszeniav1">Moje ogłoszenia</a></li>
+								<li><a href="#">Moje ogłoszenia</a></li>
 							
                             </ul>
                         </div>
@@ -746,12 +736,12 @@
                     </div>
         </div>
     </div>
-    <script src="/static/js/jquery.js"></script>
-    <script src="/static/js/bootstrap.min.js"></script>
-    <script src="/static/js/jquery.prettyPhoto.js"></script>
-    <script src="/static/js/jquery.isotope.min.js"></script>
-    <script src="/static/js/main.js"></script>
-    <script src="/static/js/wow.min.js"></script>
+    <script src="static/js/jquery.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/jquery.prettyPhoto.js"></script>
+    <script src="static/js/jquery.isotope.min.js"></script>
+    <script src="static/js/main.js"></script>
+    <script src="static/js/wow.min.js"></script>
 	<script type="text/javascript">
     function changeState(el) {
         if (el.readOnly) el.checked=el.readOnly=false;

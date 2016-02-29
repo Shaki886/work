@@ -62,7 +62,6 @@ INSTALLED_APPS = (
     'wiadomosci',
     'wiadomosciv2',
     'zmien_haslo',
-    'users',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -128,20 +127,3 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
-TEMPLATES = [
-    {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
-        'APP_DIRS': True,
-        'OPTIONS': {
-            'context_processors': [
-                'django.contrib.auth.context_processors.auth',
-                'django.core.context_processors.request',
-                'users.context_processors.ip_address_processor'
-            ],
-        },
-    },
-]
-
-LOGIN_REDIRECT_URL = '/'
