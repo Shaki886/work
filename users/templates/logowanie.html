@@ -84,38 +84,14 @@
 					<h2>Zaloguj się</h2>
 					
 					
-					<ul class="nav navbar-nav navbar-right">
-					<form class="form-horizontal" role="form">
-  <div class="form-group">
-    <label for="inputEmail3" class="col-sm-2 control-label" style="margin-top:25px;">Email</label>
-    <div class="col-sm-9">
-      <input type="email" class="form-control" id="inputEmail3" placeholder="email">
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="inputPassword3" class="col-sm-2 control-label"  style="margin-top:20px;">Hasło <span>(zapomniałem hasła)</span></label>
-    <div class="col-sm-9">
-      <input type="password" class="form-control" id="inputPassword3" placeholder="password">
-    </div>
-  </div>
-      <div class="col-sm-5 col-sm-offset-2">
-  <div class="form-group">
-      <div class="checkbox">
-        <label>
-          <input type="checkbox"> Zapamiętaj mnie
-        </label>
-      </div>
-    </div>
-  </div>
-  
-    <div class="col-sm-3 col-sm-offset-1">
-  <div class="form-group">
- 
-      <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Zaloguj się</button>
-    </div>
-  </div>
-</form>
-</ul>
+					
+					<form class="form-horizontal" role="form" method="post">
+					{% csrf_token %}	
+					{% bootstrap_form form %}
+					<button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Zaloguj się</button>
+
+					</form>
+
             {% else %}
                 <li><a href="#">{{ request.user }}</a></li>
                 <li><a href="{% url 'logout' %}">Wyloguj</a></li>
