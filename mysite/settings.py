@@ -63,7 +63,7 @@ INSTALLED_APPS = (
     'wiadomosciv2',
     'zmien_haslo',
     'users',
-    'pagination',
+    'bootstrap_pagination',
     'bootstrap3',
 )
 
