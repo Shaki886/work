@@ -62,6 +62,7 @@ INSTALLED_APPS = (
     'wiadomosci',
     'wiadomosciv2',
     'zmien_haslo',
+	'users',
 )
 
 MIDDLEWARE_CLASSES = (

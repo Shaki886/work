@@ -7,6 +7,12 @@ admin.autodiscover()
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+	
+	#users
+    url(r'^user/', include('users.urls')),
+	
+	
+	
     url(r'', include('index.urls')),
     url(r'^index/', include('index.urls')),
     url(r'^blog/', include('blog.urls')),
