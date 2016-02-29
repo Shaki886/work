@@ -80,11 +80,11 @@
         <div class="container">
 		   <div class="row">
 		     <div class="col-sm-12 regulamin ">
-				<h2>Regulamin serwisu Gielda-aut.pl</h2>
-
+					<h2>Regulamin serwisu Gielda-aut.pl</h2>
+					{% for regulamin in regulamins %}
 				<h4><span>{{ regulamin.tytul }}</span></h4>
-					<p> {{ regulamin.trescc }}</p> 
-
+					<p> {{ regulamin.tresc|linebreaks }}</p> 
+					{% endfor %}
 				</div>	
            </div>
         </div><!--/.container-->

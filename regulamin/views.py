@@ -1,9 +1,9 @@
 from django.shortcuts import render
 
-from .models import Regulamin
+from .models import REGULAMIN
 
 def regulamin(request):
 
-    regulamins= Regulamin.objects.order_by()
+    regulamins= REGULAMIN.objects.order_by()
 
     return render(request, 'regulamin/regulamin.html', {'regulamins': regulamins})
