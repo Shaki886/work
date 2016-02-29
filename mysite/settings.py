@@ -53,7 +53,6 @@ INSTALLED_APPS = (
     'mojekonto_ogloszenia',
     'mojekonto_ogloszeniav1',
     'ogloszenie_widok',
-    'pojedynczy_wpis',
     'pomoc',
     'ustawienia',
     'regulamin',
