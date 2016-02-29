@@ -82,6 +82,8 @@
 		     <div class="col-sm-5 col-sm-offset-1  border">
 					<h2>Zaloguj się</h2>
 					
+					
+					<ul class="nav navbar-nav navbar-right">
 					<form class="form-horizontal" role="form">
   <div class="form-group">
     <label for="inputEmail3" class="col-sm-2 control-label" style="margin-top:25px;">Email</label>
@@ -104,18 +106,23 @@
       </div>
     </div>
   </div>
+  
     <div class="col-sm-3 col-sm-offset-1">
   <div class="form-group">
  
-      <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Zaloguj się</button>
+      <li><a href="{% url 'login' %}"><button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Zaloguj się</button></a></li>
     </div>
   </div>
 </form>
+</ul>
+
+
+
            </div>
 		    <div class="col-sm-4 col-sm-offset-1">
 					<h2 style="margin-left:-110px;">Zarejestruj się</h2>
 					
-					<li><a href="{% url 'create_user' %}"><button type="submit" name="submit" class="btn btn-lg registration">Klient indywidualny</button><BR><BR></a></li>
+					<button type="submit" name="submit" class="btn btn-lg registration">Klient indywidualny</button><BR><BR>
 					<button type="submit" name="submit" class="btn btn-primary-reg btn-lg">Dealer</button>
 					
            </div>
