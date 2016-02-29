@@ -9,4 +9,4 @@ class PostList(generic.ListView):
     paginate_by = 4
     context_object_name = 'post_list'
 
-post_list = NewsList.as_view()
+post_list = PostList.as_view()
