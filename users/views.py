@@ -5,7 +5,7 @@ from django.template import RequestContext
 from django.shortcuts import *
 from django.contrib.auth import login,authenticate,logout
 from django.contrib.auth.models import User
-
+from users.forms import FormularzLogowania
 def logowanie(request):
     if request.method == 'POST':
         form = FormularzLogowania(request.POST)

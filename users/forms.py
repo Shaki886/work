@@ -2,6 +2,7 @@
 from django import forms
 from django.contrib.auth.models import User
 from django.core.exceptions import ObjectDoesNotExist
+from django.contrib.auth.forms import FormularzLogowania
 
 class FormularzLogowania(forms.Form):
     email = forms.CharField(label="email:",max_length=30)
