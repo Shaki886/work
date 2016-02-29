@@ -62,7 +62,8 @@ INSTALLED_APPS = (
     'wiadomosci',
     'wiadomosciv2',
     'zmien_haslo',
-	'users',
+    'users',
+    'pagination',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -74,6 +75,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+	'pagination.middleware.PaginationMiddleware'
 )
 
 ROOT_URLCONF = 'mysite.urls'

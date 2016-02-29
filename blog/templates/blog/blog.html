@@ -1,4 +1,5 @@
 {% load staticfiles %}
+{% load pagination_tags %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -95,7 +96,7 @@
 				</div>
 				
 				
-				{% for post in page.object_list %}
+				{% for post in posts %}
 				<div class="col-sm-6 border-blog padding margin-bottom-blog">
 				<div class="col-sm-5 padding">
 								<img src="{% static 'images/blog_photo.png' %}" class="img-responsive">
