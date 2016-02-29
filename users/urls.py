@@ -4,4 +4,5 @@ from users import views
 
 urlpatterns = patterns(
     '',
-    url(r'^create/$', views.UserCreateView.as_view(), name='create_user')
+    url(r'^create/$', views.UserCreateView.as_view(), name='create_user'),
+)
