@@ -95,7 +95,7 @@
 				</div>
 				
 
-				{% for post in posts %}
+				{% for post in post_list %}
 				<div class="col-sm-6 border-blog padding margin-bottom-blog">
 				<div class="col-sm-5 padding">
 								<img src="{% static 'images/blog_photo.png' %}" class="img-responsive">
@@ -123,23 +123,14 @@
 								
 						</div>
 						{% endfor %}
-						
-<div class="pagination">
-    <span class="step-links">
-        {% if page_obj.has_previous %}
-            <a href="?page={{ page_obj.previous_page_number }}">previous</a>
-        {% endif %}
- 
-        <span class="current">
-            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
-        </span>
- 
-        {% if page_obj.has_next %}
-            <a href="?page={{ page_obj.next_page_number }}">next</a>
-        {% endif %}
-    </span>
-</div>
-					
+	{% if is_paginated %}					
+{% if page_obj.has_next %}
+    <a href="{% url 'post-list' %}?page={{ page_obj.next_page_number }}">starsze</a>
+{% endif %}
+{% if page_obj.has_previous %}
+    <a href="{% url 'post-list' %}?page={{ page_obj.previous_page_number }}">nowsze</a>
+{% endif %}
+	{% endif %}				
 							
 						
 							
