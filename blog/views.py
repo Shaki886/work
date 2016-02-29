@@ -4,9 +4,9 @@ from .models import Post
 from django.views import generic
 from blog import models
 
-class NewsList(generic.ListView):
+class PostList(generic.ListView):
     model = models.Post
-    paginate_by = 10
+    paginate_by = 4
     context_object_name = 'post_list'
 
 post_list = NewsList.as_view()
