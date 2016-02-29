@@ -2,7 +2,7 @@ from django.db import models
 from django.utils import timezone
 
 def upload_location(instance, filename):
-	return "%s/%s" %{instance.id, extension}
+	return "%s/%s" %{instance.id, filename}
 
 class Post(models.Model):
     author = models.ForeignKey('auth.User')
