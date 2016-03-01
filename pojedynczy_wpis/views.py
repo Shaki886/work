@@ -1,9 +1,9 @@
 from django.views import generic
 from blog import models
 
-class PostList(generic.ListView):
+class Post(generic.ListView):
     model = models.Post
     paginate_by = 1
-    context_object_name = 'post_list'
+    context_object_name = 'post'
 
-post_list = PostList.as_view()
+post = Post.as_view()
