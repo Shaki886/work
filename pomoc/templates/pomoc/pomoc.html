@@ -85,18 +85,19 @@
         <div class="container">
 		   <div class="row">
 		     <div class="col-sm-12">
-				<h6>Pomoc</h6>
+				<h6>FAQ- najczęstsze zadawane pytania</h6>
 					
 			 </div>	
            </div>
 		  
         </div><!--/.container-->
+								{% for pomoc in pomocs %}
 		 	<div class="accordion">
                         <div class="panel-group" id="accordion1">
                          
 
                          
-						{% for pomoc in pomocs %}
+
                           <div class="panel panel-default">
                             <div class="panel-heading">
                               <h3 class="panel-title">
@@ -114,22 +115,12 @@
                           </div>
                           
                           </div>
-						{% endfor %}
-						  
-						   <div class="panel panel-default">
-                            <div class="panel-heading">
-                              <h3 class="panel-title">
-                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree2">
-                                <center style="font-size:20px; text-transform:uppercase;"> 1. Lorem ipsum dolor sit amet</center>
-                                  
-                                </a>
-                              </h3>
-                            </div>
-                           
-                          </div>
+
+					
                          
                         </div><!--/#accordion1-->
-                    </div>
+										{% endfor %}
+
     </section>
    
 
