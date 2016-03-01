@@ -10,7 +10,7 @@ include this URLConf somewhere in your URL hierarchy (for example, at
 from django.conf.urls import url
 from django.views.generic import TemplateView
 
-from contact_form.views import ContactFormView
+from kontakt.views import ContactFormView
 
 
 urlpatterns = [
