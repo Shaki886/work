@@ -93,6 +93,9 @@ TEMPLATES = [
         },
     },
 ]
+TEMPLATE_LOADERS = (
+    'django.template.loaders.app_directories.Loader',
+)
 
 
 WSGI_APPLICATION = 'mysite.wsgi.application'

@@ -1,6 +1,8 @@
-from django.conf.urls import url
-from . import views
+from django.conf.urls import patterns, url
 
-urlpatterns = [
-    url(r'^$', views.kontakt, name='kontakt'),
-]
+from kontakt import views
+
+urlpatterns = patterns(
+    '',
+    url(r'^add/$', views.PostCreateView.as_view(), name='kontakt'),
+)
