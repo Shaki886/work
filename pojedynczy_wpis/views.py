@@ -1,5 +1,5 @@
 from django.views import generic
-from pojedynczy_wpis import models
+from blog import models
 
 class Post(generic.ListView):
     model = models.Post
