@@ -2,7 +2,6 @@ from django.shortcuts import render
 from django.views.generic.edit import CreateView
 
 from kontakt.forms import KontForm
-from kontakt.models import Kontakt
 
 
 class PostCreateView(CreateView):

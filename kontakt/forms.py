@@ -1,6 +1,5 @@
 from django import forms
 
-from kontakt.models import Kontakt
 
 
 class KontForm(forms.ModelForm):
