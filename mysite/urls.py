@@ -22,6 +22,7 @@ urlpatterns = [
     url(r'^dodaj_ogloszenie/', include('dodaj_ogloszenie.urls')),
     url(r'^dodawanieogloszenia/', include('dodawanieogloszenia.urls')),
     url(r'^faq/', include('faq.urls')),
+    url(r'^wpis/', include('pojedynczy_wpis.urls')),
     url(r'^kategorie/', include('kategorie.urls')),
     url(r'^kontakt/', include('kontakt.urls')),
     url(r'^logowanie/', include('logowanie.urls')),
