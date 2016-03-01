@@ -85,7 +85,7 @@
         <div class="container">
 		   <div class="row">
 		     <div class="col-sm-12">
-				<h6>FAQ- najczęstsze zadawane pytania</h6>
+				<h6>Pomoc</h6>
 					
 			 </div>	
            </div>
@@ -96,19 +96,25 @@
                          
 
                          
-
+						{% for pomoc in pomocs %}
                           <div class="panel panel-default">
                             <div class="panel-heading">
                               <h3 class="panel-title">
-                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree1">
-                                <center style="font-size:20px; text-transform:uppercase;"> 1. Lorem ipsum dolor sit amet</center>
-                                  
+                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree{{ pomoc.numer }}">
+                                <center style="font-size:20px; text-transform:uppercase;"> {{ pomoc.numer }} {{ pomoc.tytul }}</center>
+                                
                                 </a>
                               </h3>
                             </div>
+							<div id="collapseThree{{ pomoc.numer }}" class="panel-collapse collapse" style="height: 0px;">
+                              <div class="panel-body">
+                                 {{ pomoc.tresc|linebreaks }}
+                              </div>
+                            </div>
+                          </div>
                           
                           </div>
-
+						{% endfor }
 						  
 						   <div class="panel panel-default">
                             <div class="panel-heading">
