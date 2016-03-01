@@ -5,7 +5,6 @@ from kontakt.forms import KontForm
 
 
 class PostCreateView(CreateView):
-    model = Kontakt
     form_class = KontForm
     success_url = '/kontakt/kontakt'
     template_name = 'kontakt/kontakt.html'
