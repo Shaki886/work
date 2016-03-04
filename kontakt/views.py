@@ -1,4 +1,4 @@
-from django.shortcuts import render_to_response
+from django.shortcuts import render
 from kontakt.forms import KontaktForm
 
 def kontakt(request):
@@ -12,4 +12,5 @@ def kontakt(request):
 		else:
 			kontakt_form = KontactForm()
 
-	return render_to_response('kontakt/kontakt.html', {})
+	ctx = {'kontakt_form':kontakt_form}
+	return render(request, 'kontakt/kontakt.html', {'kontakt_form':kontakt_form,})
