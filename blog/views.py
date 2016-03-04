@@ -12,5 +12,4 @@ class ViewList(generic.ListView):
     model = models.Post
     paginate_by = 1
     context_object_name = 'view_list'
-
-view_list = ViewList.as_view()
+    template_name = 'view_list.html'
