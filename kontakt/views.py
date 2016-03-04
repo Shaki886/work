@@ -1,4 +1,4 @@
-from django.shortcuts import render_toresponse
+from django.shortcuts import render_to_response
 
 from kontakt.forms import KontaktForm
 
