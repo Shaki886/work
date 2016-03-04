@@ -13,4 +13,4 @@ def kontakt(request):
 			kontakt_form = KontactForm()
 
 	ctx = {'kontakt_form':kontakt_form}
-	return render(request, 'kontakt/kontakt.html', {'kontakt_form':kontakt_form,})
+	return render(request, 'kontakt/kontakt.html', {'form':kontakt_form,})

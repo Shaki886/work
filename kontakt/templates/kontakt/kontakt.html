@@ -1,11 +1,7 @@
-	<h2>Contact</h2>
-
-	<form action="." method="POST">
-	
-	{{ kontakt_form.as_p }}
-
-
-	<input type="submit" value="Send">
-	<input type="rest" value="Reset">
-	</form>
+<h1>Contact</h1>
+<form role="form" action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+</form>
 	
