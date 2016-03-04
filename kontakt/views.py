@@ -12,6 +12,6 @@ def kontakt(request):
 			title = kontakt_form.cleaned_data['title']
 			text = kontakt_form.cleaned_data['text']
 			send_mail('Subject here', msg, email, ['testmail@gmail.com'], fail_silently=False)
-			return HttpResponseRedirect('blog/kontakt/')
-	return render(request, 'index', {'form': form})
+			return HttpResponseRedirect('')
+	return render(request, 'kontakt/kontakt', {'form': form})
 
