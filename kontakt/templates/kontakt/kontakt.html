@@ -7,12 +7,12 @@
     <meta name="author" content="">
     <title>Giełda-aut.pl</title>	
 	<!-- core CSS -->
-    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">  
 	<link href='https://fonts.googleapis.com/css?family=Exo+2:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link href="static/css/prettyPhoto.css" rel="stylesheet">
-    <link href="static/css/main.css" rel="stylesheet">
-    <link href="static/css/responsive.css" rel="stylesheet">
+    <link href="/static/css/prettyPhoto.css" rel="stylesheet">
+    <link href="/static/css/main.css" rel="stylesheet">
+    <link href="/static/css/responsive.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -34,7 +34,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                    <a class="navbar-brand" href="/index"><img src="{% static 'images/logo.png' %}" alt="logo"></a>
                 </div>
 				
                 <div class="collapse navbar-collapse navbar-right">
@@ -311,7 +311,7 @@
 						
 						<div class="col-md-12 netbook">
 						<div class="row margin">
-						<img src="static/images/logo.png" alt="giełda aut"/>
+						<img src="{% static 'images/logo.png' %}" alt="giełda aut"/>
 						<div class="media-body">
 						Copyright 2015 for Giełda aut.<BR>
 						<a href="#" alt="pliki COOKIES">Strona wykorzystuje pliki cookie</a>
@@ -458,7 +458,7 @@
 				
 
 						<div class="row margin visible-xs-block visible-sm-block">
-						<img src="statc/images/logo.png" alt="giełda aut"/>
+						<img src="{% static 'images/logo.png' %}" alt="giełda aut"/>
 						<div class="media-body">
 						Copyright 2015 for Giełda aut.<BR>
 						<a href="#" alt="pliki COOKIES">Strona wykorzystuje pliki cookie</a>
@@ -468,13 +468,13 @@
                     </div>
         </div>
     </div>
-    <script src="static/js/jquery.js"></script>
-    <script src="static/js/bootstrap.min.js"></script>
-    <script src="static/js/jquery.prettyPhoto.js"></script>
-    <script src="static/js/jquery.isotope.min.js"></script>
-    <script src="static/js/main.js"></script>
-    <script src="static/js/wow.min.js"></script>
-	<script type="text/javascript">
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/jquery.prettyPhoto.js"></script>
+    <script src="/static/js/jquery.isotope.min.js"></script>
+    <script src="/static/js/main.js"></script>
+    <script src="/static/js/wow.min.js"></script>
+	<script type="/text/javascript">
     function changeState(el) {
         if (el.readOnly) el.checked=el.readOnly=false;
         else if (!el.checked) el.readOnly=el.indeterminate=true;
