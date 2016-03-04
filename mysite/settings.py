@@ -64,6 +64,7 @@ INSTALLED_APPS = (
     'zmien_haslo',
     'users',
     'bootstrap3',
+    'kontaktok',
 )
 
 MIDDLEWARE_CLASSES = (
