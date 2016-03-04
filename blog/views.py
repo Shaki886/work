@@ -20,7 +20,7 @@ def post_list(request):
 	context = {
 		"post_list": queryset,
 		"title": "View"
-	}
+		}
 	return render(request, "post_list.html", context)
 
 	
