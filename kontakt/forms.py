@@ -1,5 +1,4 @@
 from django import forms
-from django.db import models
 
 class KontaktForm(forms.Form):
     INDYWIDUALNY = 'Indywidualny'
@@ -8,9 +7,9 @@ class KontaktForm(forms.Form):
         (INDYWIDUALNY, 'Indywidualny'),
         (DEALER, 'Dealer'),
         )
-    Rodzaj_klienta = model.CharField(max_length=2,
+    Rodzaj_klienta = froms.CharField(max_length=2,
                                       choices=RODZAJ_KLIENTA_CHOICES,
-                                      default=INDYWIDUALNY)
+                                      )
     title = forms.CharField(required=True)
     text = forms.CharField(
         required=True,
