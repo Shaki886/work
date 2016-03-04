@@ -5,8 +5,8 @@ class PostList(generic.ListView):
     model = models.Post
     paginate_by = 4
     context_object_name = 'post_list'
+    template_name = 'post_list.html'
 
-post_list = PostList.as_view()
 
 class ViewList(generic.ListView):
     model = models.Post
