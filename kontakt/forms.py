@@ -6,7 +6,7 @@ class KontaktForm(forms.Form):
         required=True,
         widget=forms.Textarea
     )
-    name = forms.Charfield(required=True)
+    name = forms.CharField(required=True)
     email = forms.EmailField(required=True)
     numer_ogloszenia = forms.IntegerField(required=True)
     telefon = forms.IntegerField() 
