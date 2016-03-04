@@ -1,6 +1,8 @@
 from django import forms
 
 class KontaktForm(forms.Form):
+    INDYWIDUALNY = 'Indywidualny'
+    DEALER = 'Dealer'
     RODZAJ_KLIENTA_CHOICES = (
         (INDYWIDUALNY, 'Indywidualny'),
         (DEALER, 'Dealer'),
