@@ -88,7 +88,7 @@
 		     <div class="col-sm-12 ">
 				<h2>Wypełnij formularz kontatowy</h2>
 					{% csrf_token %}
-				<form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php">
+				<form id="main-contact-form" class="contact-form" name="kontakt-form" method="post" action="sendemail.php">
                     <div class="col-sm-10">
                         <div class="form-group">
                             <div class="col-sm-3"><label>Rodzaj klienta</label></div>
@@ -107,7 +107,7 @@
 							</div>
                         </div>
                        <div class="form-group">
-                            <div class="col-sm-3"><label>Treść</label></div>
+                            <div class="col-sm-3"><label for="id_tekst">Treść</label></div>
 							<div class="col-sm-9 ">
                             <textarea name="tekst" id="id_tekst" required="required" class="form-control" rows="8"></textarea>
 							</div>
@@ -117,9 +117,9 @@
 					
 					<div class="col-sm-6" style="margin-left:50px;">
                     <div class="form-group">
-                            <div class="col-sm-5 padding "><label>Imię i nazwisko</label></div>
+                            <div class="col-sm-5 padding "><label for="id_Imię_i_Nazwisko">Imię i nazwisko</label></div>
 							<div class="col-sm-7 padding">
-                           <input class="form-control" type="text">
+                           <input id="id_Imię_i_Nazwisko" class="form-control" type="text">
 							</div>
                         </div>
                      </div>     
