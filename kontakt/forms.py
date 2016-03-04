@@ -7,9 +7,8 @@ class KontaktForm(forms.Form):
         (INDYWIDUALNY, 'Indywidualny'),
         (DEALER, 'Dealer'),
         )
-    Rodzaj_klienta = forms.CharField(max_length=2,
-                                      choices=RODZAJ_KLIENTA_CHOICES,
-                                      )
+    name = forms.MultipleChoiceField(widget=forms.CheckboxSelectMultiple,
+                                  choices=OPTIONS)
     title = forms.CharField(required=True)
     text = forms.CharField(
         required=True,
@@ -19,10 +18,7 @@ class KontaktForm(forms.Form):
     email = forms.EmailField(required=True)
     numer_ogloszenia = forms.IntegerField(required=True)
     telefon = forms.CharField(min_length=9) 
-	
-	
 
-	
 	
 	
 	
