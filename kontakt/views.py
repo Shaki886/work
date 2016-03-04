@@ -13,5 +13,5 @@ def kontakt(request):
 			text = kontakt_form.cleaned_data['text']
 			send_mail('Subject here', msg, email, ['testmail@gmail.com'], fail_silently=False)
 			return HttpResponseRedirect('')
-	return render(request, 'kontakt/', {'form': form})
+	return render(request, '', {'form': form})
 
