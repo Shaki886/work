@@ -3,10 +3,10 @@
 <body>
 <h1> {{ title }} is working!</h1>
 
-{{% for obj in object_list %}}
+{{% for post in object_list %}}
 
-{{ obj.title }}<br/>
-{{ obj.author }}<br/>
+{{ post.title }}<br/>
+{{ post.author }}<br/>
 
 {% endfor %}
 
