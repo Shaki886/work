@@ -7,7 +7,7 @@ class KontaktForm(forms.Form):
         (INDYWIDUALNY, 'Indywidualny'),
         (DEALER, 'Dealer'),
         )
-    Rodzaj_klienta = froms.CharField(max_length=2,
+    Rodzaj_klienta = forms.CharField(max_length=2,
                                       choices=RODZAJ_KLIENTA_CHOICES,
                                       )
     title = forms.CharField(required=True)
