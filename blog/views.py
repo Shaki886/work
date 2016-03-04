@@ -10,6 +10,7 @@ def post_view(request):
 		"post_list": queryset,
 		"title": "View"
 		}
+	paginate_by = 1
 	return render(request, "view.html", context)
 	
 	
