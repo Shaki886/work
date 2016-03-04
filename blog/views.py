@@ -7,7 +7,7 @@ from .models import Post
 
 
 def post_list(request):
-	queryset = Post.objects.all()
+	queryset = Post.objects.all().order_by("-timestamp")
 	context = {
 		"post_list": queryset,
 		"title": "View"
