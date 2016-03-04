@@ -14,4 +14,4 @@ def kontakt(request):
 			kontakt_form = KontactForm()
 
 	ctx = {'kontakt_form':kontakt_form}
-	return render_to_response(request, 'kontakt/kontakt.html', {})
+	return render_to_response('kontakt/kontakt.html', ctx, {})
