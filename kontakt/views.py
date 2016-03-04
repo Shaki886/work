@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from kontakt.forms import KontaktForm
+from django.template import RequestContext
 
 def kontakt(request):
 	if request.method == "POST":
@@ -13,4 +14,5 @@ def kontakt(request):
 			kontakt_form = KontactForm()
 
 	ctx = {'kontakt_form':kontakt_form}
-	return render(request, 'kontakt/kontakt.html', {'form':kontakt_form,})
+	
+	return render(request, 'kontakt/kontakt.html', ctx, context_instance=RequestContext(request))
