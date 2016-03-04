@@ -1,7 +1,7 @@
-from django.conf.urls import patterns, url
+from django.conf.urls import url
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.kontakt, name='kontakt'),
-    url(r'^ok/$', {'template_name': 'ok.html'}, name='kontaktok'),
+	url(r'^/?$', 'kontakt.views.kontakt', name='kontakt'),
+	url(r'^ok/?$', 'kontakt.views.ok', name='kontaktok'),
 ]
