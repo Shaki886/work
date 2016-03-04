@@ -7,8 +7,8 @@ class KontaktForm(forms.Form):
         (INDYWIDUALNY, 'Indywidualny'),
         (DEALER, 'Dealer'),
         )
-    name = forms.MultipleChoiceField(widget=forms.CheckboxSelectMultiple,
-                                  choices=OPTIONS)
+    Rodzaj_klienta= forms.MultipleChoiceField(widget=forms.CheckboxSelectMultiple,
+                                  choices=RODZAJ_KLIENTA_CHOICES)
     title = forms.CharField(required=True)
     text = forms.CharField(
         required=True,
