@@ -4,7 +4,7 @@ class KontaktForm(forms.Form):
 
 	tresc = forms.Charfield( widget=forms.Textarea)
 
-	e-mail = forms.EmailField
+	e-mail = forms.EmailField()
 
 	
 	
