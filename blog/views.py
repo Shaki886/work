@@ -7,7 +7,7 @@ from .models import Post
 def post_view(request):
 	queryset = Post.objects.all()
 	context = {
-		"object_list": queryset,
+		"post_list": queryset,
 		"title": "View"
 		}
 	return render(request, "view.html", context)
