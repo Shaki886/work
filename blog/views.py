@@ -17,7 +17,7 @@ def post_list(request):
 def post_view(request):
 	instance = get_object_or_404(Post, id=3)
 	context = {
-		"title": "Detail"
+		"title": "Detail",
 		"instance": instance,
 		}
 	return render(request, "view.html", context)
