@@ -8,7 +8,7 @@ from .models import Post
 
 
 def post_list(request):
-	queryset_list = Post.objects.all()
+	queryset_list = Post.objects.all().order_by("-created_date")
 	paginator = Paginator(queryset_list, 4) 
 	page = request.GET.get('page')
 	try:
