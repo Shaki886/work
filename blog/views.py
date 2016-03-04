@@ -13,7 +13,7 @@ post_list = PostList.as_view()
 def post_view(request):
 	queryset = Post.objects.all()
 	context = {
-		"queryset": queryset
+		"object_list": queryset,
 		"title": "View"
 	}
 	return render(request, "view.html", context)
