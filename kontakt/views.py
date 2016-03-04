@@ -3,14 +3,14 @@ from django.core.mail import send_mail
 from .forms import KontaktForm
 
 def kontakt(request):
-	kontakt_form = KontaktForm
+	form_class = KontaktForm
 	# if request is not post, initialize an empty form
-	form = kontakt_form(request.POST or None)
+	form = form_class(request.POST or None)
 	if request.method == 'POST':
 		if form.is_valid():
-			email = kontakt_form.cleaned_data['email']
-			title = kontakt_form.cleaned_data['title']
-			text = kontakt_form.cleaned_data['text']
+			email = request.POST.get('email')
+			title = request.POST.get('title')
+			text = request.POST.get('text')
 			send_mail('Subject here', msg, email, ['testmail@gmail.com'], fail_silently=False)
 			return HttpResponseRedirect('')
 	return render(request, '', {'form': form})
