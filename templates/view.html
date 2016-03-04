@@ -3,7 +3,10 @@
 <body>
 <h1> {{ title }} is working!</h1>
 
-{{ object_list }}
+{{% for obj in object_list %}}
+
+{{ obj.title }}
+{{ obj.author }}
 
 </body>
 

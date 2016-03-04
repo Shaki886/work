@@ -6,7 +6,6 @@ from .models import Post
 
 def post_view(request):
 	queryset = Post.objects.all()
-	paginate_by = 1
 	context = {
 		"object_list": queryset,
 		"title": "View"
