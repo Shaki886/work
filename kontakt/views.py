@@ -3,7 +3,7 @@ from django.shortcuts import render_to_response
 from kontakt.forms import KontaktForm
 
 def kontakt(request):
-	if request.methof == "POST":
+	if request.method == "POST":
 		kontakt_forms = KontaktForm(request.POST)
 		if kontact_form.is_valid():
 			success = True
