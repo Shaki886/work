@@ -13,6 +13,9 @@ def kontakt(request):
 		else:
 			kontakt_form = KontactForm()
 
+	except kontakt.DoesNotExist:
+		kontakt = None
 	ctx = {'kontakt_form':kontakt_form}
 	
 	return render(request, 'kontakt/kontakt.html', ctx, context_instance=RequestContext(request))
+
