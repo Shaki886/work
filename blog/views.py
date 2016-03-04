@@ -9,7 +9,7 @@ class PostList(CreateView):
 
 
 class ViewList(CreateView):
-    model = models.Post
+    model_class = Post
     paginate_by = 1
     context_object_name = 'view_list'
     template_name = 'view_list.html'
