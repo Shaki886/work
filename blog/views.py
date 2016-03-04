@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.views import generic
-from blog import models
+from .models import Post
 
 class PostList(generic.ListView):
     model = models.Post
@@ -11,4 +11,5 @@ class PostList(generic.ListView):
 post_list = PostList.as_view()
 
 def post_view(request):
+	
 	return render(request, "view.html", {})
