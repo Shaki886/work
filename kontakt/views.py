@@ -13,7 +13,9 @@ def kontakt(request):
 		else:
 			kontakt_form = KontactForm()
 
-	except kontakt.DoesNotExist:
+	try: 
+		kontakt = KontaktForm
+	except KontaktForm.DoesNotExist:
 		kontakt = None
 	ctx = {'kontakt_form':kontakt_form}
 	
