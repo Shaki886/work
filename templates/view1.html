@@ -60,13 +60,13 @@
             <div class="row">
                <div class="col-sm-12 padding">
 					<div class="col-sm-7 padding">
-					<img src="{% static 'images/blog_title.png' %}" class="img-responsive" />
+					<img src='/media/{{ instance.image }}' class="img-responsive" />
 					</div>
 					<div class="col-sm-5">
-					<div class="glowny-tytul-wpisu">{{ title }}</div>
-					<div class="blog-head-text"> Lorem {{ object_list }} sit atmet, Lorem ipsum dolor sit atmet, Lorem ipsum dolor sit atmet, Lorem ipsum dolor sit atmet, Lorem ipsum dolor sit atmet, Lorem ipsum dolor sit atmet, Lorem ipsum dolor sit atmet, Lorem ipsum dolor sit atmet, Lorem ipsum dolor sit atmet, Lorem ipsum dolor sit atmet, Lorem ipsum dolor sit</div>
+					<div class="glowny-tytul-wpisu">{{ instance.title }}</div>
+					<div class="blog-head-text">{{ instance.krotki_opis|linebreaks }}</div>
 					<div class="col-sm-7 data-bloga">
-							26 maj 2015
+							{{ instance.created_date }}
 							</div>
 					</div>
 					 
@@ -83,10 +83,7 @@
 				
 				<div class="col-sm-8 border padding">
                
-                    <h4 class="tytul-wpisu">This Photopgraph is lorem ipsum dolor</h4>
-						Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. <BR>
-						Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. <BR>
-						Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. Lorem ipsum dolor sit atmet. 
+						{{ instance.text|linebreaks }}
             </div>
 			<div class="col-sm-4">
 					<h4>Polecane</h4><BR>
