@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
 	url(r'^/?$', 'kontakt.views.kontakt', name='kontakt'),
-	url(r'^ok/?$', 'kontakt.views.ok', name='kontaktok'),
+	url(r'^ok/?$', 'kontakt.views.kontakt1', name='kontaktok'),
 ]
