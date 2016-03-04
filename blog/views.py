@@ -11,5 +11,9 @@ class PostList(generic.ListView):
 post_list = PostList.as_view()
 
 def post_view(request):
-	
-	return render(request, "view.html", {})
+	queryset = Post.objects.all()
+	context = {
+		"queryset": queryset
+		"title": "View"
+	}
+	return render(request, "view.html", context)
