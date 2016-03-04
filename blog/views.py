@@ -4,8 +4,8 @@ from blog import models
 
 
 
-class ViewList(generic.ListView):
+class OneList(generic.ListView):
     model = models.Post
     paginate_by = 1
-    context_object_name = 'view_list'
-    template_name = 'view_list.html'
+    context_object_name = 'one_list'
+    template_name = 'one_list.html'
