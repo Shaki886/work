@@ -107,9 +107,9 @@
 							<div class="col-sm-9 ">
                             <select class="form-control">
 							<option>wybierz</option>
-
+							{% for temat in temats %}
 							<option id="id_temat" name="temat">{{ temat.temat }}</option>
-
+							{% endfor %}
 							</select>
 							</div>
                         </div>
