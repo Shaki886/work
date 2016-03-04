@@ -9,15 +9,15 @@ class KontaktForm(forms.Form):
         )
     Rodzaj_klienta= forms.MultipleChoiceField(widget=forms.CheckboxSelectMultiple,
                                   choices=RODZAJ_KLIENTA_CHOICES)
-    title = forms.CharField(required=True)
-    text = forms.CharField(
+    Tytuł = forms.CharField(required=True)
+    Tekst = forms.CharField(
         required=True,
         widget=forms.Textarea
     )
-    name = forms.CharField(required=True)
-    email = forms.EmailField(required=True)
-    numer_ogloszenia = forms.IntegerField(required=True)
-    telefon = forms.CharField(min_length=9) 
+    Imię_i_Nazwisko = forms.CharField(required=True)
+    Email = forms.EmailField(required=True)
+    Numer_ogłoszenia = forms.IntegerField(required=True)
+    Telefon = forms.CharField(min_length=9) 
 
 	
 	
