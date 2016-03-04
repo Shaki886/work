@@ -8,20 +8,19 @@ from .models import Post
 
 
 def post_list(request):
-	queryset_list = Post.objects.all().order_by("-created_date")
-    paginator = Paginator(queryset_list, 4) 
-
-    page = request.GET.get('page')
-    try:
-        queryset = paginator.page(page)
-    except PageNotAnInteger:
-        queryset = paginator.page(1)
-    except EmptyPage:
-        queryset = paginator.page(paginator.num_pages)
-    context = {
+	queryset_list = Post.objects.all()
+	paginator = Paginator(queryset_list, 4) 
+	page = request.GET.get('page')
+	try:
+		queryset = paginator.page(page)
+	except PageNotAnInteger:
+		queryset = paginator.page(1)
+	except EmptyPage:
+		queryset = paginator.page(paginator.num_pages)
+	context = {
 		"post_list": queryset,
 		"title": "View"
-		}
+	}
 	return render(request, "post_list.html", context)
 
 	
