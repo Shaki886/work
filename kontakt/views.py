@@ -12,6 +12,6 @@ def kontakt(request):
 			title = request.POST.get('title')
 			text = request.POST.get('text')
 			send_mail('Subject here', msg, email, ['testmail@gmail.com'], fail_silently=False)
-			return HttpResponseRedirect('')
-	return render(request, '', {'form': form})
+			return HttpResponseRedirect('kontakt/kontakt')
+	return render(request, 'kontakt/kontakt.html', {'form': form})
 
