@@ -10,5 +10,5 @@ class PostList(generic.ListView):
 
 post_list = PostList.as_view()
 
-def view_list(request):
+def post_view(request):
 	return HttpResponse("<h1>Hello</h1>")
