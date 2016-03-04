@@ -99,7 +99,7 @@
 				<div class="col-sm-6 border-blog padding margin-bottom-blog">
 				<div class="col-sm-5 padding">
 							{% if post.image %}
-								<img src='/media/{{ post.image }}' class='img-responsive'>
+									<img src='{{ post.image.url }}' class='img-responsive' />
 								{% endif %}
 								</div>
 								<div class="col-sm-7 padding">
