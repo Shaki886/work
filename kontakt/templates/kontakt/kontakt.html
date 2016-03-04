@@ -99,10 +99,11 @@
 							</div>
                         </div>
                       <div class="form-group">
-                            <div class="col-sm-3"><label>Wybierz temat</label></div>
+                            <div class="col-sm-3"><label for="id_klient">Wybierz temat</label></div>
 							<div class="col-sm-9 ">
                             <select class="form-control">
-								<option>wybierz</option>
+								<option id="id_klient" name="klient">Indywidualny</option>
+								<option id="id_klient" name="klient">Dealer</option>
 							</select>
 							</div>
                         </div>
@@ -119,15 +120,15 @@
                     <div class="form-group">
                             <div class="col-sm-5 padding "><label for="id_Imię_i_Nazwisko">Imię i nazwisko</label></div>
 							<div class="col-sm-7 padding">
-                           <input id="id_Imię_i_Nazwisko" class="form-control" type="text">
+                           <input id="id_imie_i_nazwisko" name="imie_i_nazwisko" class="form-control" type="text">
 							</div>
                         </div>
                      </div>     
 					<div class="col-sm-5 " style="margin-left:25px;">
                     <div class="form-group">
-                            <div class="col-sm-4 padding"><label>E-mail</label></div>
+                            <div class="col-sm-4 padding"><label for="id_email">E-mail</label></div>
 							<div class="col-sm-8 padding">
-                           <input class="form-control" type="text">
+                           <input id="id_email" name="email" class="form-control" type="text">
 							</div>
                         </div>
                      </div>  
@@ -136,24 +137,24 @@
 					
 					<div class="col-sm-6" style="margin-left:50px;">
                     <div class="form-group">
-                            <div class="col-sm-5 padding "><label>Numer ogłoszenia</label></div>
+                            <div class="col-sm-5 padding "><label for="id_numer_ogloszenia">Numer ogłoszenia</label></div>
 							<div class="col-sm-7 padding">
-                           <input class="form-control" type="text">
+                           <input id="id_numer_ogloszenia" name="numer_ogloszenia" class="form-control" type="text">
 							</div>
                         </div>
                      </div>     
 					<div class="col-sm-5 " style="margin-left:25px;">
                     <div class="form-group">
-                            <div class="col-sm-4 padding"><label>Telefon</label></div>
+                            <div class="col-sm-4 padding"><label for="id_telefon">Telefon</label></div>
 							<div class="col-sm-8 padding">
-                           <input class="form-control" type="text">
+                           <input id="id_telefon" name="telefon" class="form-control" type="text">
 							</div>
                         </div>
                      </div> 
 					 
 					 <div class="col-sm-5 col-sm-offset-3" >
                         <div class="form-group">
-                            <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Wyślij wiadomość</button>
+                            <button type="submit" class="btn btn-primary btn-lg" required="required">Wyślij wiadomość</button>
                         </div>
 						</div>
                     </div>
