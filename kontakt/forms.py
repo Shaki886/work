@@ -9,7 +9,7 @@ class KontaktForm(forms.Form):
         )
     Rodzaj_klienta = forms.CharField(max_length=2,
                                       choices=RODZAJ_KLIENTA_CHOICES,
-                                      default=INDYWIDUALNY)
+                                      'default'=INDYWIDUALNY)
     title = forms.CharField(required=True)
     text = forms.CharField(
         required=True,
