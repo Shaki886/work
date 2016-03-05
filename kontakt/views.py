@@ -25,6 +25,6 @@ def kontakt(request):
 def temat(request):
 
     temats= TEMAT.objects.order_by()
-    return (request, '', {'temats':temats)
+    return (request, '', {'temats': temats})
 
 
