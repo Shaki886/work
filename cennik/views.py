@@ -7,9 +7,16 @@ from .models import DODATKI
 
 def cennik(request):
 
-    dnis = DNI.objects.order_by()
     cennik_ind = CENNIK_IND.objects.order_by()
     cennik_dea = CENNIK_DEA.objects.order_by()
     dodatki = DODATKI.objects.order_by()
 
     return render(request, 'cennik/cennik.html', {'cennik': cennik})
+	
+def dni(request):
+	dni = DNI.objects.all()
+	context = {
+		"dni": queryset,
+		"title": "Dni"
+		}
+	return render(request, "cennik.html", context)
