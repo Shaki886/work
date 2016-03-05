@@ -6,7 +6,7 @@ admin.site.register(DNI)
 from .models import CENNIK_IND
 admin.site.register(CENNIK_IND)
 
-from .models import CENNIK_DEA)
+from .models import CENNIK_DEA
 admin.site.register(CENNIK_DEA)
 
 from .models import DODATKI
