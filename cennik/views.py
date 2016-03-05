@@ -12,4 +12,4 @@ def cennik(request):
     cennik_dea = CENNIK_DEA.objects.order_by()
     dodatki = DODATKI.objects.order_by()
 
-    return render(request, 'cennik/cennik.html', {'regulamins': regulamins})
+    return render(request, 'cennik/cennik.html', {'cennik': cennik})
