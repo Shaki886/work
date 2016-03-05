@@ -93,18 +93,22 @@
 						<thead>
 							<tr>
 								<th>Szczegóły</th>
-								<th>Pakiet 14 dni</th>
-								<th>Pakiet 28 dni</th>
-								<th>Pakiet 56 dni</th>
+								{% for cennik in dnis %}
+								<th>{{ dni.kolumna1 }}</th>
+								<th>{{ dni.kolumna2 }}</th>
+								<th>{{ dni.kolumna3 }}</th>
+								{% endfor %}
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>Liczba zdjęć</td>
-								<td>do 12</td>
-								<td>do 12</td>
-								<td>do 12</td>
+								{% for cennik in cennik_inds %}						
+								<td>{{ cennik_inds.szczegoly }}</td>
+								<td>{{ cennik_inds.kolumna1 }}</td>
+								<td>{{ cennik_inds.kolumna2 }}</td>
+								<td>{{ cennik_inds.kolumna3 }}</td>
 							</tr>
+								{% endfor %}
 							<tr>
 								<td>Miejsce prezentacji aut</td>
 								<td>gielda-aut.pl</td>
