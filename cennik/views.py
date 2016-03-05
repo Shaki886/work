@@ -13,10 +13,10 @@ def cennik(request):
 
     return render(request, 'cennik/cennik.html', {'cennik': cennik})
 	
-def dni(request):
-	dni = DNI.objects.all()
+def dni_list(request):
+	queryset_list = DNI.objects.all().order_by("-created_date")
 	context = {
-		"dni": queryset,
-		"title": "Dni"
+		"dni_list": queryset,
+		"title": "View"
 		}
 	return render(request, "cennik.html", context)
