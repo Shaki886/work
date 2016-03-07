@@ -1,7 +1,7 @@
 from django.db import models
 
 class Indywidualny(models.Model):
-	numer_wiersza = models.CharField()
+	numer_wiersza = models.CharField(max_length=10)
 	kolumna_1 = models.CharField(max_length=100)
 	kolumna_2 = models.CharField(max_length=100)
 	kolumna_3 = models.CharField(max_length=100)
