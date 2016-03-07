@@ -1,8 +1,7 @@
 from django import forms
 
 class KontaktForm(forms.Form):
-    klient = forms.CharField(required=True)
-    tytul = forms.CharField(required=True)
+
     tekst = forms.CharField(
         required=True,
         widget=forms.Textarea
