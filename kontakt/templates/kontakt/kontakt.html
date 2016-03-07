@@ -81,11 +81,30 @@
         <div class="container">
 		   <div class="row">
 		     <div class="col-sm-12 ">
-			 
 				<h2>Wypełnij formularz kontatowy</h2>
 <form role="form" action="" method="post">
     {% csrf_token %}
-    {{ form.as_p }}
+<div class="field">
+    <input id="id_klient" type="text" name="klient" maxlength="100" />
+</div>
+<div class="field">
+    <input id="id_tytul" type="text" name="tytul" maxlength="100" />
+</div>
+<div class="field">
+    <input id="id_tekst" type="text" name="tekst" maxlength="100" />
+</div>
+<div class="field">
+    <input id="id_imie_i_nazwisko" type="text" name="imie_i_nazwisko" maxlength="100" />
+</div>
+<div class="field">
+    <input id="id_email" type="text" name="email" maxlength="100" />
+</div>
+<div class="field">
+    <input id="id_numer_ogloszenia" type="text" name="numer_ogloszenia" maxlength="100" />
+</div>
+<div class="field">
+    <input id="id_telefon" type="text" name="telefon" maxlength="100" />
+</div>
     <button type="submit">Submit</button>
 </form>
 
