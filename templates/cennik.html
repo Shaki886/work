@@ -101,32 +101,14 @@
 						</thead>
 					{% endfor %}
 						<tbody>
+					{% for indywidualny in indywidualny_list %}
 							<tr>
-								<td>Liczba zdjęć</td>
-								<td>do 12</td>
-								<td>do 12</td>
-								<td>do 12</td>
+								<th>{{ indywidualny.kolumna_1 }}</th>
+								<th>{{ indywidualny.kolumna_2 }}</th>
+								<th>{{ indywidualny.kolumna_3 }}</th>
+								<th>{{ indywidualny.kolumna_4 }}</th>
 							</tr>
-							<tr>
-								<td>Miejsce prezentacji aut</td>
-								<td>gielda-aut.pl</td>
-								<td>gielda-aut.pl</td>
-								<td>gielda-aut.pl</td>
-							</tr>
-							<tr>
-								<td>Opałata</td>
-								<td>x zł</td>
-								<td>x zł</td>
-								<td>x zł</td>
-							</tr>
-							<tr>
-								<td>Opłata sms</td>
-								<td>x zł</td>
-								<td>x zł</td>
-								<td>x zł</td>
-							</tr>
-							
-							
+					{% endfor %}
 						</tbody>
 				</table>
 				
