@@ -2,16 +2,16 @@
 from django.db import models
 
 class KontaktForm(models.Model):
-    klient = forms.CharField(required=False)
-    tytul = forms.CharField(required=False)
-    tekst = forms.CharField(
+    klient = models.CharField(required=False)
+    tytul = models.CharField(required=False)
+    tekst = models.CharField(
         required=True,
-        widget=forms.Textarea
+        widget=models.Textarea
     )
-    imie_i_nazwisko = forms.CharField(required=True)
-    email = forms.EmailField(required=True)
-    numer_ogloszenia = forms.CharField(required=True)
-    telefon = forms.CharField(min_length=9)
+    imie_i_nazwisko = models.CharField(required=True)
+    email = models.EmailField(required=True)
+    numer_ogloszenia = models.CharField(required=True)
+    telefon = models.CharField(min_length=9)
 
 class Temat(models.Model):
 	temat = models.CharField(max_length=100)
