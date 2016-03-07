@@ -123,12 +123,32 @@
 </div> 
 </div>
 
-<div class="field">Numer ogloszenia
-    <input id="id_numer_ogloszenia" type="text" name="numer_ogloszenia" maxlength="100" />
+<div class="field">
+<div class="col-sm-6" style="margin-left:50px;">
+					<div class="form-group">
+							<div class="col-sm-5 padding ">
+							<label for="id_numer_ogloszenia">Numer ogłoszenia</label></div>
+							<div class="col-sm-7 padding">
+                            <input id="id_numer_ogloszenia" name="numer_ogloszenia" required="required" class="form-control" type="text">
+							</div>
+                    </div>
 </div>
-<div class="field">Telefon
-    <input id="id_telefon" type="text" name="telefon" maxlength="100" />
 </div>
+
+
+
+<div class="field">
+<div class="col-sm-5 " style="margin-left:25px;">
+                    <div class="form-group">
+                            <div class="col-sm-4 padding">
+							<label for="id_telefon">E-mail</label></div>
+							<div class="col-sm-8 padding">
+                            <input id="id_telefon" name="telefon" required="required" class="form-control" type="text" maxlength="9">
+							</div>
+                    </div>
+</div> 
+</div>
+
     <button type="submit">Submit</button>
 </div>
 </form>
