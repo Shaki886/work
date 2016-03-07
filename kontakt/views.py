@@ -8,14 +8,13 @@ def kontakt(request):
 	form = form_class(request.POST or None)
 	if request.method == 'POST':
 		if form.is_valid():
-			klient = request.POST.get('klient')
-			tytul = request.POST.get('tytul')
 			tekst = request.POST.get('tekst')
 			imie_i_nazwisko = request.POST.get('imie_i_nazwisko')
 			email = request.POST.get('email')
 			numer_ogloszenia = request.POST.get('numer_ogloszenia')
 			telefon = request.POST.get('telefon')
-			send_mail(temat, tekst, email, [shaki886@gmail.com], fail_silently=False)
+			save_it = form.save(commit=False)
+			save_it.save()
 			return HttpResponseRedirect('/kontaktok/')
 	queryset_temat = Temat.objects.all()
 	context = {
