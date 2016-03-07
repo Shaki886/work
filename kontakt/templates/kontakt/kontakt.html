@@ -87,8 +87,6 @@
 <div class="col-sm-10">
 
 <div class="field">
-
-	
 <div class="form-group">
 							<div class="col-sm-3">
 							<label for="id_klient">Rodzaj klienta</label></div>
@@ -100,16 +98,22 @@
 								</select>
 							</div>
 </div>	
-
 </div>
 
 
-<div class="field">Tytul
-
-
-    <input id="id_tytul" type="text" name="tytul" maxlength="100" />
-	
-
+<div class="field">
+<div class="form-group">
+							<div class="col-sm-3">
+							<label for="id_klient">Tytuł</label></div>
+							<div class="col-sm-9 ">
+								<select class="form-control" name="tytul" id="id_tytul">
+									<option value="" selected="selected">wybierz</option>
+							{% for temat in temats %}
+							<option> {{ temat.temat }}</option>
+							{% endfor %}
+								</select>
+							</div>
+</div>	
 </div>
 
 
