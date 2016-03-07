@@ -8,7 +8,7 @@ class KontaktForm(models.Model):
     imie_i_nazwisko = models.CharField(max_length=60)
     email = models.EmailField()
     numer_ogloszenia = models.CharField(max_length=30)
-    telefon = models.CharField(min_length=9)
+    telefon = models.CharField(max_length=9)
 
 class Temat(models.Model):
 	temat = models.CharField(max_length=100)
