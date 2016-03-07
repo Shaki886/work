@@ -77,12 +77,22 @@
     </section><!--/#services-->
 	
 	
-<h1>Contact</h1>
+ <section id="main-section">
+        <div class="container">
+		   <div class="row">
+		     <div class="col-sm-12 ">
+			 
+				<h2>Wypełnij formularz kontatowy</h2>
 <form role="form" action="" method="post">
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit">Submit</button>
 </form>
+
+			 </div>
+           </div>
+        </div><!--/.container-->
+    </section>
 
   <section id="conatcat-info">
         <div class="container">
