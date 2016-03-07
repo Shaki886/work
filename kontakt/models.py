@@ -2,15 +2,12 @@
 from django.db import models
 
 class KontaktForm(models.Model):
-    klient = models.CharField(required=False)
-    tytul = models.CharField(required=False)
-    tekst = models.CharField(
-        required=True,
-        widget=models.Textarea
-    )
-    imie_i_nazwisko = models.CharField(required=True)
-    email = models.EmailField(required=True)
-    numer_ogloszenia = models.CharField(required=True)
+    klient = models.CharField(max_length=30))
+    tytul = models.CharField(max_length=30)
+    tekst = models.TextField()
+    imie_i_nazwisko = models.CharField(max_length=60)
+    email = models.EmailField()
+    numer_ogloszenia = models.CharField(max_length=30)
     telefon = models.CharField(min_length=9)
 
 class Temat(models.Model):
