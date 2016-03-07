@@ -89,14 +89,14 @@
 				<h6>Cennik- ile kosztuje korzystanie z giełdy aut</h6>
 					<div class="price-section">Konto indywidualne</div>
 					<table class="table">
-					{% for naglowekindywidualny in naglowek1_list %}
+					{% for naglowek1 in naglowek1_list %}
 
 						<thead>
 							<tr>
-								<th>{{ naglowekindywidualny.kolumna_1 }}</th>
-								<th>{{ naglowekindywidualny.kolumna_2 }}</th>
-								<th>{{ naglowekindywidualny.kolumna_3 }}</th>
-								<th>{{ naglowekindywidualny.kolumna_4 }}</th>
+								<th>{{ naglowek1.kolumna_1 }}</th>
+								<th>{{ naglowek1.kolumna_2 }}</th>
+								<th>{{ naglowek1.kolumna_3 }}</th>
+								<th>{{ naglowek1.kolumna_4 }}</th>
 							</tr>
 						</thead>
 					{% endfor %}
