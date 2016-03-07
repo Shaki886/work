@@ -9,8 +9,7 @@ class Naglowek1(models.Model):
 class Naglowek2(models.Model):
 	kolumna_1 = models.CharField(max_length=100)
 	kolumna_2 = models.CharField(max_length=100)
-
-		
+	
 class Indywidualny(models.Model):
 	numer_wiersza = models.CharField(max_length=10)
 	kolumna_1 = models.CharField(max_length=100)

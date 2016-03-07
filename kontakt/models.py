@@ -9,11 +9,10 @@ class Kontakt(models.Model):
     email = models.EmailField()
     numer_ogloszenia = models.CharField(max_length=30)
     telefon = models.CharField(max_length=9)
+    
     def __str__(self):
 		return self.email
-	
-
-
+		
 class Temat(models.Model):
 	temat = models.CharField(max_length=100)
 	
