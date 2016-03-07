@@ -137,9 +137,5 @@ STATIC_ROOT = os.path.join (BASE_DIR, 'static')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join (BASE_DIR, 'media')
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'secureYOUR-SERVER-NUMBER.hostgator.com'
-EMAIL_PORT = '26'
-EMAIL_HOST_USER = 'USER@YOURDOMAIN.COM'
-EMAIL_HOST_PASSWORD = 'THE-EMAIL-ACCOUNT-PASSWORD'
-EMAIL_USE_TLS = True
+EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
+EMAIL_FILE_PATH = os.path.join(BASE_DIR, 'fake_emails')
