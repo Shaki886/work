@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import Indywidualny
-from .models import IndywidualnyNaglowek
+from .models import Naglowek
 
 admin.site.register(Indywidualny)
-admin.site.register(IndywidualnyNaglowek)
+admin.site.register(Naglowek)

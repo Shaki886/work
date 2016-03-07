@@ -1,6 +1,6 @@
 from django.db import models
 
-class IndywidualnyNaglowek(models.Model):
+class Naglowek(models.Model):
 	numer_wiersza = models.CharField(max_length=10)
 	kolumna_1 = models.CharField(max_length=100)
 	kolumna_2 = models.CharField(max_length=100)
