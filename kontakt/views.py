@@ -20,6 +20,7 @@ def kontakt(request):
 			email = request.POST.get('email')
 			numer_ogloszenia = request.POST.get('numer_ogloszenia')
 			telefon = request.POST.get('telefon')
+			post.save()
 			return HttpResponseRedirect('/kontaktok/')
 	return render(request, 'kontakt/kontakt.html', context)
 
