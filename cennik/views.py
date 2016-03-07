@@ -3,7 +3,7 @@ from .models import Indywidualny
 from .models import Naglowek
 
 def naglowek_list (request):
-	queryset = = Naglowek.objects.all()
+	queryset = Naglowek.objects.all()
 	context = {
 		"naglowek_list": queryset,
 		"title": "View"
