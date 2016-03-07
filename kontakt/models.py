@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 from django.db import models
-from django import forms
 
 class KontaktForm(models.Model):
     klient = forms.CharField(required=False)
