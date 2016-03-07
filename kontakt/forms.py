@@ -9,10 +9,5 @@ class KontaktForm(forms.Form):
     )
     imie_i_nazwisko = forms.CharField(required=True)
     email = forms.EmailField(required=True)
-    numer_ogloszenia = forms.IntegerField(required=True)
-    telefon = forms.CharField(min_length=9) 
-
-	
-	
-	
-	
+    numer_ogloszenia = forms.CharField(required=True)
+    telefon = forms.CharField(min_length=9)

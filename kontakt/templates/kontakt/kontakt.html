@@ -84,7 +84,8 @@
 				<h2>Wypełnij formularz kontatowy</h2>
 <form role="form" action="" method="post">
     {% csrf_token %}
-<div class="field">Klient
+<div class="field">
+    <label for="id_klient">Klient </label>
     <input id="id_klient" type="text" name="klient" maxlength="100" />
 </div>
 <div class="field">Tytul
