@@ -5,5 +5,6 @@ def indywidualny_list (request):
 	queryset = Post.objects.all()
 	context = {
 		"indywidualny_list": queryset,
+		"title": "View"
 		}
-    return render(request, "cennik.html", context)
+    return render(request, 'cennik.html', context)
