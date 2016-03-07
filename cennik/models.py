@@ -32,7 +32,6 @@ class Dealer(models.Model):
 		return self.numer_wiersza
 		
 class Dodatkowe(models.Model):
-	numer_dodatku = models.CharField(max_length=10)
 	tekst = models.CharField(max_length=100)
 
 	

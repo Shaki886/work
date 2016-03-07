@@ -8,7 +8,7 @@ from .models import Dodatkowe
 
 def indywidualny_list (request):
 	queryset_naglowek1 = Naglowek1.objects.all()
-	queryset_naglowek2 = Naglowek1.objects.all()
+	queryset_naglowek2 = Naglowek2.objects.all()
 	queryset_indywidualny = Indywidualny.objects.all()
 	queryset_dealer = Dealer.objects.all()
 	queryset_dodatkowe = Dodatkowe.objects.all()
