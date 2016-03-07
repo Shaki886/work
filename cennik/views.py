@@ -2,7 +2,7 @@ from django.shortcuts import render
 from .models import Indywidualny
 
 def indywidualny_list (request):
-	queryset = Post.objects.all()
+	queryset = Indywidualny.objects.all()
 	context = {
 		"indywidualny_list": queryset,
 		"title": "View"
