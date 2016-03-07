@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from django.db import models
 
-class KontaktForm(models.Model):
+class Kontakt(models.Model):
     klient = models.CharField(max_length=30)
     tytul = models.CharField(max_length=30)
     tekst = models.TextField()
