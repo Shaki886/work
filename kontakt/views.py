@@ -5,8 +5,6 @@ from .models import Temat
 
 def kontakt(request):
 	form_class = KontaktForm
-	temat= Temat.objects.order_by()
-
 	form = form_class(request.POST or None)
 	if request.method == 'POST':
 		if form.is_valid():
@@ -19,6 +17,11 @@ def kontakt(request):
 			telefon = request.POST.get('telefon')
 			send_mail('Subject here', tekst, email, ['shaki886@gmail.com'], fail_silently=False)
 			return HttpResponseRedirect('/kontaktok/')
+	queryset_temat = Temat.objects.all()
+	context = {
+		"temat_list": queryset_temat,
+		"title": "View"
+		}
 	return render(request, 'kontakt/kontakt.html', {})
 
 
