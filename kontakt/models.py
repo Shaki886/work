@@ -12,7 +12,7 @@ class Kontakt(models.Model):
     
 	
     def __str__(self):
-		return self.imie_i_nazwisko
+		return self.email
 	
 
 class Temat(models.Model):
