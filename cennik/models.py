@@ -1,3 +1,5 @@
 from django.db import models
 
-# Create your models here.
+class Indywidualny(models.model):
+	numer_wiersza = models.IntegerField()
+	wiersz = models.CharField(max_length=100)
