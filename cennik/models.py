@@ -1,6 +1,6 @@
 from django.db import models
 
-class Naglowek(models.Model):
+class NaglowekIndywidualny(models.Model):
 	kolumna_1 = models.CharField(max_length=100)
 	kolumna_2 = models.CharField(max_length=100)
 	kolumna_3 = models.CharField(max_length=100)
