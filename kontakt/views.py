@@ -5,7 +5,7 @@ from .models import Temat
 
 def kontakt(request):
 	form_class = KontaktForm
-	temats= TEMAT.objects.order_by()
+	temat= Temat.objects.order_by()
 
 	form = form_class(request.POST or None)
 	if request.method == 'POST':
@@ -20,12 +20,5 @@ def kontakt(request):
 			send_mail('Subject here', tekst, email, ['shaki886@gmail.com'], fail_silently=False)
 			return HttpResponseRedirect('/kontaktok/')
 	return render(request, 'kontakt/kontakt.html', {'form': form})
-
-
-
-def temat(request):
-
-
-    return (request, '', {'temats': temats})
 
 
