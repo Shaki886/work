@@ -84,6 +84,8 @@
 				<h2>Wypełnij formularz kontatowy</h2>
 <form role="form" action="" method="post">
     {% csrf_token %}
+<div class="col-sm-10">
+
 <div class="field">
     <label for="id_klient">Klient </label>
     <input id="id_klient" type="text" name="klient" maxlength="100" />
@@ -91,11 +93,22 @@
 <div class="field">Tytul
     <input id="id_tytul" type="text" name="tytul" maxlength="100" />
 </div>
-<div class="field">Tekst
-    <input id="id_tekst" type="text" name="tekst" maxlength="100" />
-</div>
-<div class="col-sm-10">
 
+
+<div class="field">
+
+
+                       <div class="form-group">
+                            <div class="col-sm-3">
+							<label for="id_tekst">Treść</label></div>
+							<div class="col-sm-9 ">
+                            <textarea id="id_tekst" required="required" name="tekst" class="form-control" rows="8"></textarea>
+							</div>
+                        </div>
+</div>
+</div>
+
+<div class="col-sm-10">
 
 <div class="field">
 <div class="col-sm-6" style="margin-left:50px;">
