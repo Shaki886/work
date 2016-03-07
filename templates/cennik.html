@@ -87,19 +87,19 @@
 		   <div class="row">
 		     <div class="col-sm-7">
 				<h6>Cennik- ile kosztuje korzystanie z giełdy aut</h6>
-								{% for indywidualny in indywidualny_list %}
-					{{ indywidualny.wiersz }}
-								{% endfor %}
 					<div class="price-section">Konto indywidualne</div>
 					<table class="table">
+					{% for indywidualny in indywidualny_list %}
+
 						<thead>
 							<tr>
-								<th>Szczegóły</th>
-								<th>Pakiet 14 dni</th>
-								<th>Pakiet 28 dni</th>
-								<th>Pakiet 56 dni</th>
+								<th>{{ indywidualny.kolumna_1 }}</th>
+								<th>{{ indywidualny.kolumna_2 }}</th>
+								<th>{{ indywidualny.kolumna_3 }}</th>
+								<th>{{ indywidualny.kolumna_4 }}</th>
 							</tr>
 						</thead>
+					{% endfor %}
 						<tbody>
 							<tr>
 								<td>Liczba zdjęć</td>
