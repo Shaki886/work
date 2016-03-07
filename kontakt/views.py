@@ -22,6 +22,6 @@ def kontakt(request):
 		"temat_list": queryset_temat,
 		"title": "View"
 		}
-	return render(request, 'kontakt/kontakt.html', {})
+	return render(request, 'kontakt/kontakt.html', context)
 
 
