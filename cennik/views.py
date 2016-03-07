@@ -7,4 +7,4 @@ def indywidualny_list (request):
 		"indywidualny_list": queryset,
 		"title": "View"
 		}
-    return render(request, 'cennik.html', context)
+	return render(request, 'cennik.html', context)
