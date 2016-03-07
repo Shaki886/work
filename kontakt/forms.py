@@ -5,7 +5,3 @@ class KontaktForm(forms.ModelForm):
 	class Meta:
 		model = Kontakt
 		fields = ('klient', 'tytul', 'tekst', 'imie_i_nazwisko', 'email', 'numer_ogloszenia', 'telefon',)
-		
-    
-    def __str__(self):
-		return self.email
