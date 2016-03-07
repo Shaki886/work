@@ -1,11 +1,12 @@
 from django.shortcuts import render, redirect, get_object_or_404, HttpResponseRedirect, render_to_response
 from django.core.mail import send_mail
 from .forms import KontaktForm
-from .models import TEMAT
+from .models import Temat
 
 def kontakt(request):
 	form_class = KontaktForm
-	# if request is not post, initialize an empty form
+	temats= TEMAT.objects.order_by()
+
 	form = form_class(request.POST or None)
 	if request.method == 'POST':
 		if form.is_valid():
@@ -24,7 +25,7 @@ def kontakt(request):
 
 def temat(request):
 
-    temats= TEMAT.objects.order_by()
+
     return (request, '', {'temats': temats})
 
 
