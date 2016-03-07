@@ -115,13 +115,15 @@
 				
 				<div class="price-section">Konto dealerskie</div>
 				<table class="table">
+					{% for naglowek2 in naglowek2_list %}
 						<thead>
 							<tr>
-								<th>Predział wystawień</th>
-								<th>cena</th>
+								<th>{{ naglowek2.kolumna_1 }}</th>
+								<th>{{ naglowek2.kolumna_2 }}</th>
 							
 							</tr>
 						</thead>
+					{% endfor %}
 						<tbody>
 					{% for dealer in dealer_list %}
 							<tr>
@@ -133,11 +135,9 @@
 				</table>
 				<div class="col-sm-12">
 					<div class="price-section">Dodatkowe wyróżnienia:
-						<p>Podświetlenie tekstu x zł netto(x zł brutto)</p>
-						<p>Podświetlenie tekstu x zł netto(x zł brutto)</p>
-						<p>Podświetlenie tekstu x zł netto(x zł brutto)</p>
-						<p>Podświetlenie tekstu x zł netto(x zł brutto)</p>
-						<p>Podświetlenie tekstu x zł netto(x zł brutto)</p>
+					{% for dodatkowe in dodatkowe_list %}
+						<p>{{ dodatkowe.tekst }}</p>
+					{% endfor %}
 					</div>	
 				</div>
            </div>
