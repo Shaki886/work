@@ -89,14 +89,14 @@
 				<h6>Cennik- ile kosztuje korzystanie z giełdy aut</h6>
 					<div class="price-section">Konto indywidualne</div>
 					<table class="table">
-					{% for naglowekind in naglowek1_list %}
+					{% for naglowek1 in naglowek_list %}
 
 						<thead>
 							<tr>
-								<th>{{ naglowekind.kolumna_1 }}</th>
-								<th>{{ naglowekind.kolumna_2 }}</th>
-								<th>{{ naglowekind.kolumna_3 }}</th>
-								<th>{{ naglowekind.kolumna_4 }}</th>
+								<th>{{ naglowek1.kolumna_1 }}</th>
+								<th>{{ naglowek1.kolumna_2 }}</th>
+								<th>{{ naglowek1.kolumna_3 }}</th>
+								<th>{{ naglowek1.kolumna_4 }}</th>
 							</tr>
 						</thead>
 					{% endfor %}
@@ -123,28 +123,12 @@
 							</tr>
 						</thead>
 						<tbody>
+					{% for delaer in dealer_list %}
 							<tr>
-								<td>1-5</td>
-								<td> x zł netto(x zł brutto)</td>
-								
+								<td>{{ dealer.kolumna_1 }}</td>
+								<td>{{ dealer.kolumna_2 }}</td>								
 							</tr>
-							<tr>
-								<td>6-10</td>
-								<td> x zł netto(x zł brutto)</td>
-								
-							</tr>
-							<tr>
-								<td>11-20</td>
-								<td> x zł netto(x zł brutto)</td>
-							
-							</tr>
-							<tr>
-								<td>21-30</td>
-								<td> x zł netto(x zł brutto)</td>
-								
-							</tr>
-							
-							
+					{% endfor %}		
 						</tbody>
 				</table>
 				<div class="col-sm-12">
