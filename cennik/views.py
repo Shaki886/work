@@ -6,4 +6,4 @@ def indywidualny_list (request):
 	context = {
 		"indywidualny_list": queryset,
 		}
-    return render(request, 'cennik/cennik.html', context)
+    return render(request, "cennik.html", context)
