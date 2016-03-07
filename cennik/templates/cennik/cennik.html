@@ -87,7 +87,9 @@
 		   <div class="row">
 		     <div class="col-sm-7">
 				<h6>Cennik- ile kosztuje korzystanie z giełdy aut</h6>
-					{{ indywidualny }}
+								{% for indywidualny in indywidualny_list %}
+					{{ indywidualny.wiersz }}
+								{% endfor %}
 					<div class="price-section">Konto indywidualne</div>
 					<table class="table">
 						<thead>
