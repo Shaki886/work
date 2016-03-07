@@ -15,7 +15,7 @@ def kontakt(request):
 			email = request.POST.get('email')
 			numer_ogloszenia = request.POST.get('numer_ogloszenia')
 			telefon = request.POST.get('telefon')
-			send_mail('Subject here', tekst, email, ['shaki886@gmail.com'], fail_silently=False)
+			send_mail(temat, tekst, email, [shaki886@gmail.com], fail_silently=False)
 			return HttpResponseRedirect('/kontaktok/')
 	queryset_temat = Temat.objects.all()
 	context = {
