@@ -66,6 +66,7 @@ INSTALLED_APPS = (
     'users',
     'bootstrap3',
     'kontaktok',
+    'postman'
 )
 
 SITE_ID = 1
