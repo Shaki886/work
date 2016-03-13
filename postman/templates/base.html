@@ -64,8 +64,10 @@
         </nav><!--/nav-->
 		
     </header><!--/header-->
-	
-	    <section id="services" class="service-item">
+
+
+   
+    <section id="services" class="service-item">
 	   <div class="container">
             <div class="row">
                <div class="col-sm-12">
@@ -78,7 +80,7 @@
 					   <div class="col-sm-7" style="margin-bottom:-15px;">
 						<ul class="menu_rejestracja">
                     <li><a href="#">Ogłoszenia</a></li>
-                    <li><a href="#">Wiadomości (2)</a></li>
+                    <li><a href="/messages">Wiadomości (2)</a></li>
                     <li><a href="#">Płatności</a></li>
 					<li><a href="#">Ustawienia</a></li>
                 </ul>
@@ -91,6 +93,38 @@
 		
     </section><!--/#services-->
 	
+	  <section id="main-section">
+        <div class="container">
+		   <div class="row">
+					<div class="col-sm-12">
+					<div class="col-sm-3">
+					<div class="form-group">
+                            <div class="col-sm-5 padding left"><label>Sortuj wg:</label></div>
+							<div class="col-sm-7 padding">
+                           <select class="selectinput_message cs-select" name="" style="margin-top:20px;">
+								<option value="">Najnowsze</option>
+								<option value="">Najstarsze</option>
+								
+							</select>
+							</div>
+                        </div>
+					</div>
+					</div>
+		     <div class="col-sm-12">
+					  <div class="col-sm-3 border">
+					  
+						
+					   <ul class="setting_menu">
+                        <li><a href="#">Odebrane (5)</a></li>
+                        <li><a href="#">Wysłane (2)</a></li>                     
+                        <li><a href="portfolio.html">Oznaczone gwiazdką</a></li>                       
+                        <li><a href="blog.html">Kosz</a></li> 
+                        						
+                    </ul>
+					
+						</div>
+			</div><!--/.container-->
+    </section>
 	
 <body>
 {% block content %}
