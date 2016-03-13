@@ -65,6 +65,7 @@ INSTALLED_APPS = (
     'users',
     'bootstrap3',
     'kontaktok',
+	'django_messages',
 )
 
 MIDDLEWARE_CLASSES = (
