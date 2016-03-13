@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
     'index',
     'blog',
     'cennik',
@@ -67,6 +68,8 @@ INSTALLED_APPS = (
     'kontaktok',
     'django_messages',
 )
+
+SITE_ID = 1
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
