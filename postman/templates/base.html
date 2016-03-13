@@ -47,12 +47,12 @@
 									<li><a href="/pomoc">Pomoc</a></li>    
 									<li><a href="/kontakt">Kontakt</a></li> 
 					<li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b><i class="fa fa-user"></i> Mietek26</b> <i class="fa fa-angle-down"></i></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b><i class="fa fa-user"></i> {{ request.user }}</b> <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="blog-item.html">Ustawienia</a></li>
                                 <li><a href="pricing.html">Płatności</a></li>
                                 <li><a href="404.html">Twoje Ogłoszenia</a></li>
-                                <li><a href="shortcodes.html">Wiadomości (2)</a></li>
+                                <li><a href="/messages">Wiadomości</a></li>
 								<li><a href="shortcodes.html">Wyloguj</a></li>
                             </ul>
                         </li>					
@@ -80,7 +80,7 @@
 					   <div class="col-sm-7" style="margin-bottom:-15px;">
 						<ul class="menu_rejestracja">
                     <li><a href="#">Ogłoszenia</a></li>
-                    <li><a href="/messages">Wiadomości (2)</a></li>
+                    <li><a href="/messages">Wiadomości</a></li>
                     <li><a href="#">Płatności</a></li>
 					<li><a href="#">Ustawienia</a></li>
                 </ul>
