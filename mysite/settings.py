@@ -66,7 +66,6 @@ INSTALLED_APPS = (
     'users',
     'bootstrap3',
     'kontaktok',
-    'django_messages',
 )
 
 SITE_ID = 1
